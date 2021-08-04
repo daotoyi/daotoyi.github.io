@@ -1,4 +1,4 @@
-## Welcome to Daotoyi Web (GitHub Pages)
+## Daotoyi WebSite
 
 You can use the [editor on GitHub](https://github.com/daotoyi/daotoyi.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
