@@ -1,14 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-27 11:58:34
- * @LastEditTime: 2021-08-27 17:00:28
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \Pythone:\Refine\daotoyi.github.io\index.md
--->
 ## Daotoyi WebSite
-
-## individual page
 
 - [editor on GitHub](https://github.com/daotoyi/daotoyi.github.io/edit/main/index.md) 
 
@@ -16,9 +6,9 @@
 
 ### Tools
 
-- [Emacs](https://github.com/daotoyi/emacsemacs.d)
+- [Emacs](https://gitee.com/daotoyi/emacs.d)
 
-- [Vimrc](https://github.com/daotoyi/vimvimrc)
+- [Vimrc](https://gitee.com/daotoyi/vimrc)
 
 ### Opensource
 
@@ -26,7 +16,7 @@
 
 - comics
 
-## refine
+### Refine
 
 - practice
 
