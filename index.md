@@ -1,37 +1,36 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-08-27 11:58:34
+ * @LastEditTime: 2021-08-27 17:00:28
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Pythone:\Refine\daotoyi.github.io\index.md
+-->
 ## Daotoyi WebSite
 
-You can use the [editor on GitHub](https://github.com/daotoyi/daotoyi.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## individual page
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- [editor on GitHub](https://github.com/daotoyi/daotoyi.github.io/edit/main/index.md) 
 
-### Markdown
+- [preview GitHub](https://github.com/daotoyi/daotoyi.github.io)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Tools
 
-```markdown
-Syntax highlighted code block
+- [Emacs](https://github.com/daotoyi/emacsemacs.d)
 
-# Header 1
-## Header 2
-### Header 3
+- [Vimrc](https://github.com/daotoyi/vimvimrc)
 
-- Bulleted
-- List
+### Opensource
 
-1. Numbered
-2. List
+- dyQuant 
 
-**Bold** and _Italic_ and `Code` text
+- comics
 
-[Link](url) and ![Image](src)
-```
+## refine
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- practice
 
-### Jekyll Themes
+---
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/daotoyi/daotoyi.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+daotoyi(c)2021
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
