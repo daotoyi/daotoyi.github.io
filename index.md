@@ -9,6 +9,8 @@
 - [Emacs](https://gitee.com/daotoyi/emacs.d)
 
 - [Vimrc](https://gitee.com/daotoyi/vimrc)
+	
+- [SpaceVim](https://gitee.com/daotoyi/spacevim.d)
 
 ### Opensource
 
