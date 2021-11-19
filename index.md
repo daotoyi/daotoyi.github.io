@@ -8,6 +8,8 @@
 
 - [Emacs](https://gitee.com/daotoyi/emacs.d)
 
+- [SpacEmacs](https://gitee.com/daotoyi/spacemacs.d)
+
 - [Vimrc](https://gitee.com/daotoyi/vimrc)
 	
 - [SpaceVim](https://gitee.com/daotoyi/spacevim.d)
