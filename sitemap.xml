@@ -9,14 +9,14 @@
   </url>
   
   <url>
-    <loc>https://daotoyi.github.io/posts/second/</loc>
+    <loc>https://daotoyi.github.io/posts/</loc>
     <lastmod>2022-02-03T11:17:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://daotoyi.github.io/posts/</loc>
+    <loc>https://daotoyi.github.io/posts/second/</loc>
     <lastmod>2022-02-03T11:17:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://daotoyi.github.io/categories/blog/</loc>
-    <lastmod>2022-02-03T10:41:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://daotoyi.github.io/categories/</loc>
     <lastmod>2022-02-03T10:41:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -44,7 +37,21 @@
   </url>
   
   <url>
-    <loc>https://daotoyi.github.io/tags/start/</loc>
+    <loc>https://daotoyi.github.io/categories/eamcs/</loc>
+    <lastmod>2022-02-03T10:41:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/emacs/</loc>
+    <lastmod>2022-02-03T10:41:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/org/</loc>
     <lastmod>2022-02-03T10:41:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

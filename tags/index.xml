@@ -8,11 +8,20 @@
     <language>en</language>
     <lastBuildDate>Thu, 03 Feb 2022 10:41:17 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>start</title>
-      <link>https://daotoyi.github.io/tags/start/</link>
+      <title>emacs,</title>
+      <link>https://daotoyi.github.io/tags/emacs/</link>
       <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/tags/start/</guid>
+      <guid>https://daotoyi.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>org</title>
+      <link>https://daotoyi.github.io/tags/org/</link>
+      <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/org/</guid>
       <description></description>
     </item>
     

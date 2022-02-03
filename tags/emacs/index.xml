@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on daoyi site</title>
-    <link>https://daotoyi.github.io/posts/</link>
-    <description>Recent content in Posts on daoyi site</description>
+    <title>emacs, on daoyi site</title>
+    <link>https://daotoyi.github.io/tags/emacs/</link>
+    <description>Recent content in emacs, on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Feb 2022 11:17:37 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Second</title>
-      <link>https://daotoyi.github.io/posts/second/</link>
-      <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/second/</guid>
-      <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
-    </item>
-    
+    <lastBuildDate>Thu, 03 Feb 2022 10:41:17 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#34;First&#34;</title>
       <link>https://daotoyi.github.io/posts/first/</link>
