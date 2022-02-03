@@ -6,7 +6,17 @@
     <description>Recent content in Posts on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Feb 2022 11:17:37 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Feb 2022 13:09:17 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://daotoyi.github.io/posts/about/</link>
+      <pubDate>Thu, 03 Feb 2022 13:09:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/about/</guid>
+      <description> myself  daoyi
+  hobbies  computer enthusiast   financial/economic   quant/hedge   zhouyi/zhongyi   comics     refine  read   code  python   shell   emacs-lisp   c/c++     efficient tool     categories archive self-contral     normal uTools     Quicker     Capslock++     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd         about site   refine techknowledge record life    </description>
+    </item>
+    
     <item>
       <title>Second</title>
       <link>https://daotoyi.github.io/posts/second/</link>
@@ -17,7 +27,7 @@
     </item>
     
     <item>
-      <title>&#34;First&#34;</title>
+      <title>First</title>
       <link>https://daotoyi.github.io/posts/first/</link>
       <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
       

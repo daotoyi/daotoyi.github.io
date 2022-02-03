@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>&#34;First&#34; - daoyi site</title>
+  <title>First - daoyi site</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -41,7 +41,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="&#34;First&#34;" />
+<meta property="og:title" content="First" />
 <meta property="og:description" content="
 
 简述
@@ -137,9 +137,9 @@ Read More
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/first/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-03T10:41:17+08:00" />
-<meta property="article:modified_time" content="2022-02-03T10:41:17+08:00" />
+<meta property="article:modified_time" content="2022-02-03T14:05:36+08:00" />
 
-<meta itemprop="name" content="&#34;First&#34;">
+<meta itemprop="name" content="First">
 <meta itemprop="description" content="
 
 简述
@@ -232,10 +232,10 @@ Read More
 
 
 生成的文章要支持 Read More ，在需要分割的地方添加 "><meta itemprop="datePublished" content="2022-02-03T10:41:17+08:00" />
-<meta itemprop="dateModified" content="2022-02-03T10:41:17+08:00" />
-<meta itemprop="wordCount" content="596">
+<meta itemprop="dateModified" content="2022-02-03T14:05:36+08:00" />
+<meta itemprop="wordCount" content="580">
 <meta itemprop="keywords" content="emacs,,org," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="&#34;First&#34;"/>
+<meta name="twitter:title" content="First"/>
 <meta name="twitter:description" content="
 
 简述
@@ -360,7 +360,7 @@ Read More
         <li class="mobile-menu-item">Tags</li>
       </a><a href="/categories/">
         <li class="mobile-menu-item">Categories</li>
-      </a><a href="/about/">
+      </a><a href="/posts/about/">
         <li class="mobile-menu-item">About</li>
       </a>
   </ul>
@@ -391,7 +391,7 @@ Read More
       </li><li class="menu-item">
         <a class="menu-item-link" href="/categories/">Categories</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
+        <a class="menu-item-link" href="/posts/about/">About</a>
       </li>
   </ul>
 </nav>
@@ -553,7 +553,6 @@ hotkey
 <ul>
 <li>渲染效果</li>
 </ul>
-<p>#+end_src</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -596,6 +595,9 @@ image
 table
 </h3>
 <div id="outline-text-headline-12" class="outline-text-3">
+<ul>
+<li>原始内容</li>
+</ul>
 <div class="src src-org">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -610,6 +612,9 @@ table
 </div>
 </div>
 </div>
+<ul>
+<li>渲染效果</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -634,7 +639,7 @@ footnote
 </h3>
 <div id="outline-text-headline-13" class="outline-text-3">
 <p>
-spacemacs 添加脚注的快捷键是 `, i f` 。</p>
+spacemacs 添加脚注的快捷键是 <code class="verbatim">, i f</code> 。</p>
 <div id="outline-container-headline-14" class="outline-4">
 <h4 id="headline-14">
 sytax
@@ -651,16 +656,18 @@ sytax
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org">[1]
-　　纯数字脚注。和 footnote.el 兼容但是不建议，因为代码段里常常出现[1]
-<span class="bp">[fn:</span><span class="s">名字</span><span class="bp">]</span>
-　　命名的脚注参考，名字是唯一的标签，或者可以自动地创建成数字。
-<span class="bp">[fn:</span><span class="s">:内联定义</span><span class="bp">]</span>
-　　LaTeX-like 的匿名脚注，定义直接在引用点（reference point）给出。
-<span class="bp">[fn:</span><span class="s">名字:定义</span><span class="bp">]</span>
-　　一个内联的 fotnote，也指定名字作为提示。因为 Org 允许多个引用指向同一个名字，你可以用<span class="bp">[fn:</span><span class="s">name</span><span class="bp">]</span>来创建额外的引用。</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org">  [1]
+  　　纯数字脚注。和 footnote.el 兼容但是不建议，因为代码段里常常出现[1]
+  <span class="bp">[fn:</span><span class="s">名字</span><span class="bp">]</span>
+  　　命名的脚注参考，名字是唯一的标签，或者可以自动地创建成数字。
+  <span class="bp">[fn:</span><span class="s">:内联定义</span><span class="bp">]</span>
+  　　LaTeX-like 的匿名脚注，定义直接在引用点（reference point）给出。
+  <span class="bp">[fn:</span><span class="s">名字:定义</span><span class="bp">]</span>
+  　　一个内联的 fotnote，也指定名字作为提示。
+      因为 Org 允许多个引用指向同一个名字，你可以用<span class="bp">[fn:</span><span class="s">name</span><span class="bp">]</span>来创建额外的引用。</code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -677,23 +684,11 @@ example
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-org" data-lang="org">在这行添加第一个脚注<span class="bp">[fn:</span><span class="s">1</span><span class="bp">]</span>。
 
-在这行添加第二个脚注<span class="bp">[fn:</span><span class="s">2</span><span class="bp">]</span>。
-   
-\* Footnotes
-
-<span class="bp">[fn:</span><span class="s">1</span><span class="bp">]</span> 这是第一个脚注
-
-<span class="bp">[fn:</span><span class="s">2</span><span class="bp">]</span> 这是第二个脚注</code></pre></td></tr></table>
+在这行添加第二个脚注<span class="bp">[fn:</span><span class="s">2</span><span class="bp">]</span>。</code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -703,11 +698,19 @@ example
 </div>
 <div id="outline-container-headline-16" class="outline-3">
 <h3 id="headline-16">
+Footnotes
+</h3>
+</div>
+<div id="outline-container-headline-17" class="outline-3">
+<h3 id="headline-17">
 org-mode 转义
 </h3>
-<div id="outline-text-headline-16" class="outline-text-3">
+<div id="outline-text-headline-17" class="outline-text-3">
 <p>
-| 这样的符号在 org 里是需要转义，可以在 spacemacs 中键入 `SPC SPC` ，输入 `org-entities-help `找到对应的转义码。</p>
+| 这样的符号在 org 里是需要转义，可以在 spacemacs 中键入 <code class="verbatim">SPC SPC</code> ，输入 <code class="verbatim">org-entities-help</code> 找到对应的转义码。</p>
+<div class="center-block" style="text-align: center; margin-left: auto; margin-right: auto;">
+<p><img src="https://kangxiaoning.github.io/images/emacs/org-entities-help.png" alt="https://kangxiaoning.github.io/images/emacs/org-entities-help.png" title="https://kangxiaoning.github.io/images/emacs/org-entities-help.png" /></p>
+</div>
 </div>
 </div>
 </div>
