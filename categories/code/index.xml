@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>daoyi site</title>
-    <link>https://daotoyi.github.io/</link>
-    <description>Recent content on daoyi site</description>
+    <title>code on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/code/</link>
+    <description>Recent content in code on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Feb 2022 09:33:17 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Repositories</title>
-      <link>https://daotoyi.github.io/repositories/</link>
-      <pubDate>Fri, 04 Feb 2022 09:33:17 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/repositories/</guid>
-      <description> github    emacs
- dylayer(spacemacs) emacs.d    vim
- dylayer(spacevim) _vimrc    quant
- dymonitor    tools
- inspectionPro      gitee    vim-plugins
- easymotion monokai orgmode supertab      Org   github    </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://daotoyi.github.io/about/</link>
-      <pubDate>Thu, 03 Feb 2022 13:09:17 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/about/</guid>
-      <description> about me  daoyi
-  hobbies   computer financial/economic quant/hedge zhouyi/zhongyi comics    refine   read  code
- python shell c/c++ emacs-lisp   efficient tool     categories archive self-control     windows uTools     Quicker     Capslock++     geek     everything/listary     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd       about site   refine techknowledge record life    </description>
-    </item>
-    
+    <lastBuildDate>Thu, 03 Feb 2022 11:17:37 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second-markdown</title>
       <link>https://daotoyi.github.io/post/second-markdown/</link>
