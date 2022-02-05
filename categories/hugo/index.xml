@@ -6,19 +6,18 @@
     <description>Recent content in hugo on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Feb 2022 09:33:17 +0800</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 09:33:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Repositories</title>
       <link>https://daotoyi.github.io/repositories/</link>
       <pubDate>Fri, 04 Feb 2022 09:33:17 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/repositories/</guid>
-      <description> github    emacs
- dylayer(spacemacs) emacs.d    vim
- dylayer(spacevim) _vimrc    quant
- dymonitor    tools
- inspectionPro      gitee    vim-plugins
- easymotion monokai orgmode supertab      Org   github    </description>
+      <description> Github     emacs    dylayer(spacemacs)    emacs.d      vim    dylayer(spacevim)    _vimrc      quant    dymonitor      tools    inspectionPro     Gitee     vim-plugins    easymotion    monokai    orgmode    supertab     Org     github   </description>
     </item>
     
     <item>
@@ -27,9 +26,7 @@
       <pubDate>Thu, 03 Feb 2022 13:09:17 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/about/</guid>
-      <description> about me  daoyi
-  hobbies   computer financial/economic quant/hedge zhouyi/zhongyi comics    refine   read  code
- python shell c/c++ emacs-lisp   efficient tool     categories archive self-control     windows uTools     Quicker     Capslock++     geek     everything/listary     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd       about site   refine techknowledge record life    </description>
+      <description> About Me   daoyi Hobbies     computer    financial/economic    quant/hedge    zhouyi/zhongyi    comics   Refine     read    code    python    shell    c/c++    emacs-lisp      efficient tool      categories archive self-control     windows uTools     Quicker     Capslock++     geek     everything/listary     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd     About Site     refine techknowledge    record life   </description>
     </item>
     
     <item>
@@ -47,54 +44,69 @@
       <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/post/first-orgmode/</guid>
-      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
+      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
 简述
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-采用 &lt;code class=&#34;verbatim&#34;&gt;emacs org-mde&lt;/code&gt; 在 &lt;code class=&#34;verbatim&#34;&gt;Hugo + Github&lt;/code&gt; 部署的静态网站上记录个人博客。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+采用 &lt;code class=&#34;verbatim&#34;&gt;emacs org-mde&lt;/code&gt; 在 &lt;code class=&#34;verbatim&#34;&gt;Hugo + Github&lt;/code&gt; 部署的静态网站上记录个人博客。
+&lt;/p&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Hugo
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Hugo 是由 Go 语言实现的静态网站生成器。&lt;/li&gt;
-&lt;li&gt;简单、易用、高效、易扩展、快速部署。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Hugo 是由 Go 语言实现的静态网站生成器。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+简单、易用、高效、易扩展、快速部署。
+&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Github
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-github pages&lt;/p&gt;
+github pages
+&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;完全免费&lt;/li&gt;
-&lt;li&gt;可以绑定域名&lt;/li&gt;
-&lt;li&gt;使用免费的 HTTPS&lt;/li&gt;
-&lt;li&gt;自己 DIY 网站的主题&lt;/li&gt;
-&lt;li&gt;使用他人开发好的插件&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+完全免费
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+可以绑定域名
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+使用免费的 HTTPS
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+自己 DIY 网站的主题
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+使用他人开发好的插件
+&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Org-mode
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Read More
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-生成的文章要支持 Read More ，在需要分割的地方添加 &lt;code&gt;#more&lt;/code&gt; (中间有空格)即可。&lt;/p&gt;</description>
+生成的文章要支持 Read More ，在需要分割的地方添加 &lt;code&gt;#more&lt;/code&gt; (中间有空格)即可。
+&lt;/p&gt;</description>
     </item>
     
   </channel>
