@@ -3,91 +3,175 @@
   
   <url>
     <loc>https://daotoyi.github.io/categories/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/hugo/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/repositories/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/about/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/code/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/markdown/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/org/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/second-markdown/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/tags/emacs/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/hugo/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo/hugo/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/snippet/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs/snippets/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/tool/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/git/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/github/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github/oauth/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github/github-mannal-issues/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/even/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo/loveit/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo/even/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/loveit/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/repositories/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/about/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/code/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/markdown/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/org/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/second-markdown/</loc>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/post/first-orgmode/</loc>
-    <lastmod>2022-02-05T12:17:27+08:00</lastmod>
+    <lastmod>2022-02-06T23:37:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

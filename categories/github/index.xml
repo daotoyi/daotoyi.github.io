@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/github/</link>
+    <description>Recent content in github on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 15:04:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github App 及 OAuth</title>
+      <link>https://daotoyi.github.io/post/github/oauth/</link>
+      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/oauth/</guid>
+      <description>令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己</description>
+    </item>
+    
+  </channel>
+</rss>

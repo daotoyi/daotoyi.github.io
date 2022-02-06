@@ -12,6 +12,60 @@
     
     
     <item>
+      <title>Hugo使用总结</title>
+      <link>https://daotoyi.github.io/post/hugo/hugo/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo/hugo/</guid>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml</description>
+    </item>
+    
+    <item>
+      <title>snippets使用小结</title>
+      <link>https://daotoyi.github.io/post/emacs/snippets/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs/snippets/</guid>
+      <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
+    </item>
+    
+    <item>
+      <title>Github App 及 OAuth</title>
+      <link>https://daotoyi.github.io/post/github/oauth/</link>
+      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/oauth/</guid>
+      <description>令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己</description>
+    </item>
+    
+    <item>
+      <title>Git使用问题整理</title>
+      <link>https://daotoyi.github.io/post/github/github-mannal-issues/</link>
+      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/github-mannal-issues/</guid>
+      <description>fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1</description>
+    </item>
+    
+    <item>
+      <title>Hugo主题 LoveIt使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo/loveit/</link>
+      <pubDate>Sat, 05 Feb 2022 12:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo/loveit/</guid>
+      <description>LoveIt compatible</description>
+    </item>
+    
+    <item>
+      <title>Hugo主题even使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo/even/</link>
+      <pubDate>Sat, 05 Feb 2022 12:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo/even/</guid>
+      <description>config hugo –config debugconfig.toml hugo –config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放</description>
+    </item>
+    
+    <item>
       <title>Repositories</title>
       <link>https://daotoyi.github.io/repositories/</link>
       <pubDate>Fri, 04 Feb 2022 09:33:17 +0800</pubDate>
