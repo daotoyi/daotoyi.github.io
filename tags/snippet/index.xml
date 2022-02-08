@@ -1,24 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>snippet on daoyi site</title>
-    <link>https://daotoyi.github.io/tags/snippet/</link>
-    <description>Recent content in snippet on daoyi site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daotoyi.github.io/tags/snippet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>snippets使用小结</title>
-      <link>https://daotoyi.github.io/post/emacs/snippets/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/emacs/snippets/</guid>
-      <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>snippet - 标签 - 道一</title>
+        <link>https://example.com/tags/snippet/</link>
+        <description>snippet - 标签 - 道一</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daotoyi@foxmail.com (道一)</managingEditor>
+            <webMaster>daotoyi@foxmail.com (道一)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/snippet/" rel="self" type="application/rss+xml" /><item>
+    <title>snippets使用小结</title>
+    <link>https://example.com/post/emacs/snippets/</link>
+    <pubDate>Sun, 06 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/post/emacs/snippets/</guid>
+    <description><![CDATA[常用指令 hotkey M-x （function） note C-c &amp; C-n yas-new-snippet C-c &amp; C-s yas-insert-snippet C-c &amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase]]></description>
+</item></channel>
 </rss>
