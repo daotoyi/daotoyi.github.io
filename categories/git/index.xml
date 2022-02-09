@@ -1,15 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>git - 分类 - 道一</title>
-        <link>https://example.com/categories/git/</link>
-        <description>git - 分类 - 道一</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daotoyi@foxmail.com (道一)</managingEditor>
-            <webMaster>daotoyi@foxmail.com (道一)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 07 Feb 2022 15:05:37 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/git/" rel="self" type="application/rss+xml" /><item>
-    <title>Git使用问题整理</title>
-    <link>https://example.com/post/github/github-mannal-issues/</link>
-    <pubDate>Sat, 05 Feb 2022 15:04:10 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/github/github-mannal-issues/</guid>
-    <description><![CDATA[fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/git/</link>
+    <description>Recent content in git on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Feb 2022 15:05:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git使用问题整理</title>
+      <link>https://daotoyi.github.io/post/github/github-mannal-issues/</link>
+      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/github-mannal-issues/</guid>
+      <description>fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1</description>
+    </item>
+    
+  </channel>
 </rss>

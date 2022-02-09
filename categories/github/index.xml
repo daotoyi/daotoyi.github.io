@@ -1,22 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>github - 分类 - 道一</title>
-        <link>https://example.com/categories/github/</link>
-        <description>github - 分类 - 道一</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daotoyi@foxmail.com (道一)</managingEditor>
-            <webMaster>daotoyi@foxmail.com (道一)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 07 Feb 2022 15:05:37 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/github/" rel="self" type="application/rss+xml" /><item>
-    <title>github-pages托管静态网页绑定自定义域名</title>
-    <link>https://example.com/post/github/github-pages-custome-domain-name-ssl/</link>
-    <pubDate>Mon, 07 Feb 2022 15:05:37 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/github/github-pages-custome-domain-name-ssl/</guid>
-    <description><![CDATA[Git Pages 只能为每个 GitHub 帐户创建一个用户或组织站点；而项目站点没有限制。 用户或组织站点 新建 username.github.io 仓库，将静态网页文件所在分支托管到 Github Pages。 项目站点]]></description>
-</item><item>
-    <title>Github App 及 OAuth</title>
-    <link>https://example.com/post/github/oauth/</link>
-    <pubDate>Sat, 05 Feb 2022 15:04:10 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/github/oauth/</guid>
-    <description><![CDATA[令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/github/</link>
+    <description>Recent content in github on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Feb 2022 15:05:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>github-pages托管静态网页绑定自定义域名</title>
+      <link>https://daotoyi.github.io/post/github/github-pages-custome-domain-name-ssl/</link>
+      <pubDate>Mon, 07 Feb 2022 15:05:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/github-pages-custome-domain-name-ssl/</guid>
+      <description>Git Pages 只能为每个 GitHub 帐户创建一个用户或组织站点；而项目站点没有限制。 用户或组织站点 新建 username.github.io 仓库，将静态网页文件所在分支托管到 Github Pages。 项目站点</description>
+    </item>
+    
+    <item>
+      <title>Github App 及 OAuth</title>
+      <link>https://daotoyi.github.io/post/github/oauth/</link>
+      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github/oauth/</guid>
+      <description>令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己</description>
+    </item>
+    
+  </channel>
 </rss>

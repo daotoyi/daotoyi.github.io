@@ -1,112 +1,131 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>hugo - 分类 - 道一</title>
-        <link>https://example.com/categories/hugo/</link>
-        <description>hugo - 分类 - 道一</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daotoyi@foxmail.com (道一)</managingEditor>
-            <webMaster>daotoyi@foxmail.com (道一)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/categories/hugo/" rel="self" type="application/rss+xml" /><item>
-    <title>Hugo使用总结</title>
-    <link>https://example.com/post/hugo/hugo/</link>
-    <pubDate>Sun, 06 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/hugo/hugo/</guid>
-    <description><![CDATA[按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml]]></description>
-</item><item>
-    <title>Hugo主题even使用小结</title>
-    <link>https://example.com/post/hugo/even/</link>
-    <pubDate>Sat, 05 Feb 2022 12:04:10 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/hugo/even/</guid>
-    <description><![CDATA[config hugo –config debugconfig.toml hugo –config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放]]></description>
-</item><item>
-    <title>Repositories</title>
-    <link>https://example.com/repositories/</link>
-    <pubDate>Fri, 04 Feb 2022 09:33:17 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/repositories/</guid>
-    <description><![CDATA[ Github     emacs    dylayer(spacemacs)    emacs.d      vim    dylayer(spacevim)    _vimrc      quant    dymonitor      tools    inspectionPro     Gitee     vim-plugins    easymotion    monokai    orgmode    supertab     Org     github   ]]></description>
-</item><item>
-    <title>About</title>
-    <link>https://example.com/about/</link>
-    <pubDate>Thu, 03 Feb 2022 13:09:17 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/about/</guid>
-    <description><![CDATA[ About Me   daoyi Hobbies     computer    financial/economic    quant/hedge    zhouyi/zhongyi    comics   Refine     read    code    python    shell    c/c++    emacs-lisp      efficient tool      categories archive self-control     windows uTools     Quicker     Capslock++     geek     everything/listary     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd     About Site     refine techknowledge    record life   ]]></description>
-</item><item>
-    <title>Second-markdown</title>
-    <link>https://example.com/post/second-markdown/</link>
-    <pubDate>Thu, 03 Feb 2022 11:17:37 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/second-markdown/</guid>
-    <description><![CDATA[简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑]]></description>
-</item><item>
-    <title>First-orgmode</title>
-    <link>https://example.com/post/first-orgmode/</link>
-    <pubDate>Thu, 03 Feb 2022 10:41:17 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/post/first-orgmode/</guid>
-    <description><![CDATA[<h2 id="headline-1">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/hugo/</link>
+    <description>Recent content in hugo on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo使用总结</title>
+      <link>https://daotoyi.github.io/post/hugo/hugo/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo/hugo/</guid>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml</description>
+    </item>
+    
+    <item>
+      <title>Hugo主题even使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo/even/</link>
+      <pubDate>Sat, 05 Feb 2022 12:04:10 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo/even/</guid>
+      <description>config hugo –config debugconfig.toml hugo –config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放</description>
+    </item>
+    
+    <item>
+      <title>Repositories</title>
+      <link>https://daotoyi.github.io/repositories/</link>
+      <pubDate>Fri, 04 Feb 2022 09:33:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/repositories/</guid>
+      <description> Github     emacs    dylayer(spacemacs)    emacs.d      vim    dylayer(spacevim)    _vimrc      quant    dymonitor      tools    inspectionPro     Gitee     vim-plugins    easymotion    monokai    orgmode    supertab     Org     github   </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://daotoyi.github.io/about/</link>
+      <pubDate>Thu, 03 Feb 2022 13:09:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/about/</guid>
+      <description> About Me   daoyi Hobbies     computer    financial/economic    quant/hedge    zhouyi/zhongyi    comics   Refine     read    code    python    shell    c/c++    emacs-lisp      efficient tool      categories archive self-control     windows uTools     Quicker     Capslock++     geek     everything/listary     FastKeys    emacs spacemacs dylayer     _emacs   vim spacevim dylayer     vimrc   download youtube-dl comics   github FastgithubUI    quant VNPY dymonitor    Backtrader     Qlib     Lean    quant-resource tushare     AkShare    passwd-manager Keepass     Keepass2Android     uTools-keepass    sync jianguoyun     Syncthing     verysync     FoldSync Pro    GTD emacs     Orgzly (apk)     RefTime(apk)    telegram telegram X     Nekogram X    broswer extension Tampermonkey     MarkDownload     Octotree     floccus     Onetab     Vimium     NeatDownloadManager     FireShot     stylus     Microsoft passwd     About Site     refine techknowledge    record life   </description>
+    </item>
+    
+    <item>
+      <title>Second-markdown</title>
+      <link>https://daotoyi.github.io/post/second-markdown/</link>
+      <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/second-markdown/</guid>
+      <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
+    </item>
+    
+    <item>
+      <title>First-orgmode</title>
+      <link>https://daotoyi.github.io/post/first-orgmode/</link>
+      <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/first-orgmode/</guid>
+      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
 简述
-</h2>
-<p>
-采用 <code class="verbatim">emacs org-mde</code> 在 <code class="verbatim">Hugo + Github</code> 部署的静态网站上记录个人博客。
-</p>
-<h2 id="headline-2">
+&lt;/h2&gt;
+&lt;p&gt;
+采用 &lt;code class=&#34;verbatim&#34;&gt;emacs org-mde&lt;/code&gt; 在 &lt;code class=&#34;verbatim&#34;&gt;Hugo + Github&lt;/code&gt; 部署的静态网站上记录个人博客。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
 Hugo
-</h2>
-<ul>
-<li>
-<p>
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
 Hugo 是由 Go 语言实现的静态网站生成器。
-</p>
-</li>
-<li>
-<p>
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
 简单、易用、高效、易扩展、快速部署。
-</p>
-</li>
-</ul>
-<h2 id="headline-3">
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
 Github
-</h2>
-<p>
+&lt;/h2&gt;
+&lt;p&gt;
 github pages
-</p>
-<ul>
-<li>
-<p>
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
 完全免费
-</p>
-</li>
-<li>
-<p>
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
 可以绑定域名
-</p>
-</li>
-<li>
-<p>
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
 使用免费的 HTTPS
-</p>
-</li>
-<li>
-<p>
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
 自己 DIY 网站的主题
-</p>
-</li>
-<li>
-<p>
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
 使用他人开发好的插件
-</p>
-</li>
-</ul>
-<h2 id="headline-4">
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
 Org-mode
-</h2>
-<h3 id="headline-5">
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
 Read More
-</h3>
-<p>
-生成的文章要支持 Read More ，在需要分割的地方添加 <code>#more</code> (中间有空格)即可。
-</p>]]></description>
-</item></channel>
+&lt;/h3&gt;
+&lt;p&gt;
+生成的文章要支持 Read More ，在需要分割的地方添加 &lt;code&gt;#more&lt;/code&gt; (中间有空格)即可。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

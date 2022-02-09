@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/</link>
+    <description>Recent content in Categories on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Feb 2022 17:00:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hardware</title>
+      <link>https://daotoyi.github.io/categories/hardware/</link>
+      <pubDate>Tue, 08 Feb 2022 17:00:09 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://daotoyi.github.io/categories/git/</link>
+      <pubDate>Mon, 07 Feb 2022 15:05:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://daotoyi.github.io/categories/github/</link>
+      <pubDate>Mon, 07 Feb 2022 15:05:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://daotoyi.github.io/categories/network/</link>
+      <pubDate>Mon, 07 Feb 2022 09:23:13 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://daotoyi.github.io/categories/hugo/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>https://daotoyi.github.io/categories/tool/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://daotoyi.github.io/categories/code/</link>
+      <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/code/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
