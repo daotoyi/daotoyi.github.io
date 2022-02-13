@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Second-markdown</title>
-      <link>https://daotoyi.github.io/post/second-markdown/</link>
+      <title>Hugo-markdown</title>
+      <link>https://daotoyi.github.io/post/hugo-markdown/</link>
       <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/second-markdown/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-markdown/</guid>
       <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
     </item>
     

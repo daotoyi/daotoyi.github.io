@@ -6,98 +6,26 @@
     <description>Recent content in Tags on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 17:00:09 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Feb 2022 06:58:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>AHCI</title>
-      <link>https://daotoyi.github.io/tags/ahci/</link>
-      <pubDate>Tue, 08 Feb 2022 17:00:09 +0800</pubDate>
+      <title>dired</title>
+      <link>https://daotoyi.github.io/tags/dired/</link>
+      <pubDate>Sun, 13 Feb 2022 06:58:00 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/tags/ahci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>domain</title>
-      <link>https://daotoyi.github.io/tags/domain/</link>
-      <pubDate>Mon, 07 Feb 2022 15:05:37 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/domain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssl</title>
-      <link>https://daotoyi.github.io/tags/ssl/</link>
-      <pubDate>Mon, 07 Feb 2022 15:05:37 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/ssl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CDN</title>
-      <link>https://daotoyi.github.io/tags/cdn/</link>
-      <pubDate>Mon, 07 Feb 2022 09:23:13 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/cdn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CNAME</title>
-      <link>https://daotoyi.github.io/tags/cname/</link>
-      <pubDate>Mon, 07 Feb 2022 09:23:13 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/cname/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DNS</title>
-      <link>https://daotoyi.github.io/tags/dns/</link>
-      <pubDate>Mon, 07 Feb 2022 09:23:13 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/dns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs,</title>
-      <link>https://daotoyi.github.io/tags/emacs/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snippet</title>
-      <link>https://daotoyi.github.io/tags/snippet/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/snippet/</guid>
+      <guid>https://daotoyi.github.io/tags/dired/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
       <link>https://daotoyi.github.io/tags/git/</link>
-      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      <pubDate>Sat, 12 Feb 2022 09:49:00 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>even</title>
-      <link>https://daotoyi.github.io/tags/even/</link>
-      <pubDate>Sat, 05 Feb 2022 12:04:10 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/even/</guid>
       <description></description>
     </item>
     

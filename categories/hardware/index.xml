@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hardware on daoyi site</title>
+    <title>Hardware on daoyi site</title>
     <link>https://daotoyi.github.io/categories/hardware/</link>
-    <description>Recent content in hardware on daoyi site</description>
+    <description>Recent content in Hardware on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 17:00:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Feb 2022 08:18:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>SSD性能提升</title>
-      <link>https://daotoyi.github.io/post/hardware/ssd-performance-improvement/</link>
-      <pubDate>Tue, 08 Feb 2022 17:00:09 +0800</pubDate>
+      <title>SSD 性能提升</title>
+      <link>https://daotoyi.github.io/post/ssd-performance-improvement/</link>
+      <pubDate>Tue, 08 Feb 2022 08:18:00 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hardware/ssd-performance-improvement/</guid>
+      <guid>https://daotoyi.github.io/post/ssd-performance-improvement/</guid>
       <description>固态硬盘接口 性能从低到高排序为: SATA 接口 SATA Revision 1.0 SATA Revision 2.0 SATA Revision 3.0 M.2 接口 一种支持 SATA 协议 一种支持 NVME 协议 协议性能更好，走 PCIE 通道，带宽高达 32G PCI-E 接口 直接通过 PCI-E</description>
     </item>
     

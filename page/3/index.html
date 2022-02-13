@@ -130,86 +130,111 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/first-orgmode/">First-orgmode</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/emacs-snippets-manual/">snippets 使用总结</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-02-03 </span>
+      <span class="post-time"> 2022-02-06 </span>
       <div class="post-category">
-          <a href="/categories/hugo/"> hugo, </a>
-          <a href="/categories/code/"> code </a>
+          <a href="/categories/emacs/"> emacs </a>
           </div>
-        <span class="more-meta"> 588 words </span>
+        <span class="more-meta"> 165 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      常用指令 hotkey M-x （function） note C-c &amp; C-n yas-new-snippet C-c &amp; C-s yas-insert-snippet C-c &amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase
+    </div>
+    <div class="read-more">
+      <a href="/post/emacs-snippets-manual/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/hugo-manual/">Hugo 使用总结</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-02-06 </span>
+      
+        <span class="more-meta"> 85 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml ox-hugo 1 2 3 4 5 6 7 :PROPERTIES: :EXPORT_FILE_NAME: :EXPORT_DESCRIPTION: :EXPORT_HUGO_BUNDLE: :EXPORT_HUGO_TAGS: :EXPORT_HUGO_CATEGORIES: :END: 会覆盖 orgmode 里的 tags 属性, 留空或不设置则
+    </div>
+    <div class="read-more">
+      <a href="/post/hugo-manual/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/oauth/">Github App 及 OAuth</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-02-05 </span>
+      <div class="post-category">
+          <a href="/categories/github/"> Github </a>
+          </div>
+        <span class="more-meta"> 922 words </span>
         <span class="more-meta"> 2 mins read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="headline-1">
-简述
-</h2>
-<p>
-采用 <code class="verbatim">emacs org-mde</code> 在 <code class="verbatim">Hugo + Github</code> 部署的静态网站上记录个人博客。
-</p>
-<h2 id="headline-2">
-Hugo
-</h2>
-<ul>
-<li>
-<p>
-Hugo 是由 Go 语言实现的静态网站生成器。
-</p>
-</li>
-<li>
-<p>
-简单、易用、高效、易扩展、快速部署。
-</p>
-</li>
-</ul>
-<h2 id="headline-3">
-Github
-</h2>
-<p>
-github pages
-</p>
-<ul>
-<li>
-<p>
-完全免费
-</p>
-</li>
-<li>
-<p>
-可以绑定域名
-</p>
-</li>
-<li>
-<p>
-使用免费的 HTTPS
-</p>
-</li>
-<li>
-<p>
-自己 DIY 网站的主题
-</p>
-</li>
-<li>
-<p>
-使用他人开发好的插件
-</p>
-</li>
-</ul>
-<h2 id="headline-4">
-Org-mode
-</h2>
-<h3 id="headline-5">
-Read More
-</h3>
-<p>
-生成的文章要支持 Read More ，在需要分割的地方添加 <code>#more</code> (中间有空格)即可。
-</p>
+      令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己
     </div>
     <div class="read-more">
-      <a href="/post/first-orgmode/" class="read-more-link">Read more...</a>
+      <a href="/post/oauth/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/github-mannal-issues/">Git 使用问题整理</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-02-05 </span>
+      <div class="post-category">
+          <a href="/categories/github/"> Github </a>
+          </div>
+        <span class="more-meta"> 300 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1
+    </div>
+    <div class="read-more">
+      <a href="/post/github-mannal-issues/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/hugo-theme-even-archive/">Hugo 主题 even 使用小结</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-02-05 </span>
+      
+        <span class="more-meta"> 286 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      config hugo &ndash;config debugconfig.toml hugo &ndash;config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加
+    </div>
+    <div class="read-more">
+      <a href="/post/hugo-theme-even-archive/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -221,7 +246,10 @@ Read More
         <i class="iconfont icon-left"></i>
         <span class="prev-text">Prev</span>
       </a>
-    
+    <a class="next" href="/page/4/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
         </div>
         

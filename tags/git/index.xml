@@ -6,17 +6,26 @@
     <description>Recent content in git on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Feb 2022 15:04:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Feb 2022 09:49:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Git使用问题整理</title>
-      <link>https://daotoyi.github.io/post/github/github-mannal-issues/</link>
-      <pubDate>Sat, 05 Feb 2022 15:04:10 +0800</pubDate>
+      <title>git submodule VS subtree</title>
+      <link>https://daotoyi.github.io/post/git-submodule-vs-subtree/</link>
+      <pubDate>Sat, 12 Feb 2022 09:49:00 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/github/github-mannal-issues/</guid>
+      <guid>https://daotoyi.github.io/post/git-submodule-vs-subtree/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 09:49] 仓库共用 两种子仓库使用方式 git submodule(子模块) git subtree(子树合并) git subtree 本质就是把子项目目录作为一个普通的文</description>
+    </item>
+    
+    <item>
+      <title>Git 使用问题整理</title>
+      <link>https://daotoyi.github.io/post/github-mannal-issues/</link>
+      <pubDate>Sat, 05 Feb 2022 08:25:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-mannal-issues/</guid>
       <description>fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1</description>
     </item>
     

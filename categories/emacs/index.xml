@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/emacs/</link>
+    <description>Recent content in emacs on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 06:58:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dired 常用命令</title>
+      <link>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</link>
+      <pubDate>Sun, 13 Feb 2022 06:58:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</guid>
+      <description>hotkey function notes C 拷贝文件 把 dired-recursive-copies 设为非 nil 的值可以递归拷贝目 录 通常我们设定为 top ，这表示对于顶层目录 dired 会先进行询问是否 要递归拷贝，而其中的子目录则不再询问 如</description>
+    </item>
+    
+    <item>
+      <title>vim 不需要多光标编辑[fn:link]</title>
+      <link>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</link>
+      <pubDate>Sat, 12 Feb 2022 14:54:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 14:54] 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multip</description>
+    </item>
+    
+    <item>
+      <title>snippets 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-snippets-manual/</link>
+      <pubDate>Sun, 06 Feb 2022 08:21:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-snippets-manual/</guid>
+      <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
+    </item>
+    
+  </channel>
+</rss>

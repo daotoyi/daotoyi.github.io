@@ -6,28 +6,10 @@
     <description>Recent content in hugo on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Feb 2022 09:33:17 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hugo使用总结</title>
-      <link>https://daotoyi.github.io/post/hugo/hugo/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/hugo/hugo/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml</description>
-    </item>
-    
-    <item>
-      <title>Hugo主题even使用小结</title>
-      <link>https://daotoyi.github.io/post/hugo/even/</link>
-      <pubDate>Sat, 05 Feb 2022 12:04:10 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/hugo/even/</guid>
-      <description>config hugo –config debugconfig.toml hugo –config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放</description>
-    </item>
     
     <item>
       <title>Repositories</title>
@@ -48,83 +30,12 @@
     </item>
     
     <item>
-      <title>Second-markdown</title>
-      <link>https://daotoyi.github.io/post/second-markdown/</link>
+      <title>Hugo-markdown</title>
+      <link>https://daotoyi.github.io/post/hugo-markdown/</link>
       <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/second-markdown/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-markdown/</guid>
       <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
-    </item>
-    
-    <item>
-      <title>First-orgmode</title>
-      <link>https://daotoyi.github.io/post/first-orgmode/</link>
-      <pubDate>Thu, 03 Feb 2022 10:41:17 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/first-orgmode/</guid>
-      <description>&lt;h2 id=&#34;headline-1&#34;&gt;
-简述
-&lt;/h2&gt;
-&lt;p&gt;
-采用 &lt;code class=&#34;verbatim&#34;&gt;emacs org-mde&lt;/code&gt; 在 &lt;code class=&#34;verbatim&#34;&gt;Hugo + Github&lt;/code&gt; 部署的静态网站上记录个人博客。
-&lt;/p&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Hugo
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-Hugo 是由 Go 语言实现的静态网站生成器。
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-简单、易用、高效、易扩展、快速部署。
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-Github
-&lt;/h2&gt;
-&lt;p&gt;
-github pages
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-完全免费
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-可以绑定域名
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-使用免费的 HTTPS
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-自己 DIY 网站的主题
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-使用他人开发好的插件
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
-Org-mode
-&lt;/h2&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
-Read More
-&lt;/h3&gt;
-&lt;p&gt;
-生成的文章要支持 Read More ，在需要分割的地方添加 &lt;code&gt;#more&lt;/code&gt; (中间有空格)即可。
-&lt;/p&gt;</description>
     </item>
     
   </channel>
