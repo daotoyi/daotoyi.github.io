@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/python/</link>
+    <description>Recent content in Python on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Feb 2022 08:13:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python 命名</title>
+      <link>https://daotoyi.github.io/post/python-name-standard/</link>
+      <pubDate>Tue, 15 Feb 2022 08:13:35 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-name-standard/</guid>
+      <description>Python 命名规范需要注意以下几点： 模块命名 模块推荐使用小写命名， 除非有很多字母，尽量不要用下划线 因为很多模块文件存与模块名称一致的类，模块采用小写</description>
+    </item>
+    
+  </channel>
+</rss>

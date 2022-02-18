@@ -6,10 +6,46 @@
     <description>Recent content in emacs on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Feb 2022 06:58:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Feb 2022 11:37:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>elfeed 及 elfeed-org 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-elfeed-org/</link>
+      <pubDate>Fri, 18 Feb 2022 11:37:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-elfeed-org/</guid>
+      <description>elfeed elfeed elfeed-org elfeed-org example #+begin_src org Blogs :elfeed: entry-title: \(linux\|linus\|ubuntu\|kde\|gnome\) linux http://git-annex.branchable.com/design/assistant/blog/index.rss mustread Org Mode Links supported as well Software Development dev Emacs emacsmustread http://www.terminally-incoherent.com/blog/feed entry-title: \(emacs\|org-mode\) http://planet.emacsen.org/atom.xml Web Development web http://feeds.feedburner.com/qooxdoo/blog/content #+end_src</description>
+    </item>
+    
+    <item>
+      <title>org-download&#43;screenshot 使用总结</title>
+      <link>https://daotoyi.github.io/post/org-download-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:22:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/org-download-on-windows/</guid>
+      <description>org-download org-download 使用的 ImageMagick 工具无法在 winodw 上截屏（import）。 使用 org-download-yank 直接粘贴 URL 地址 手动拖动本地图片到 emacs 中. 首次拖入emacs前需要触发org-downlo</description>
+    </item>
+    
+    <item>
+      <title>flymode 在 windows 上使用总结</title>
+      <link>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:07:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</guid>
+      <description>ENV win10 emacs-27.1 spacemacs foreword spell-checking flymode export error. spacemacs 需要 aspell0.6 以上的版本，但是 Latest Version: GNU Aspell-0.50.3 (win32)（Released Dec 22, 2002）. Aspell 找到 Aspell6 的字典包，但未找到程序包,也是不能</description>
+    </item>
+    
+    <item>
+      <title>Magit 使用</title>
+      <link>https://daotoyi.github.io/post/emacs-magit-manual/</link>
+      <pubDate>Sun, 13 Feb 2022 23:35:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-magit-manual/</guid>
+      <description>基本说明 status notes Head 当前处于哪个 branch Push 要 push 到哪个远程 branch Untracked files 哪些文件未被 gt 管理 Unstaged Changes 哪些文件修改了未 stage Staged Changes 哪些文件处于 staged 状态(即运行了 git adc) Unpushed to 哪些 commit 未 push</description>
+    </item>
     
     <item>
       <title>Dired 常用命令</title>

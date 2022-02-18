@@ -6,10 +6,46 @@
     <description>Recent content in Categories on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Feb 2022 11:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Feb 2022 11:37:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs</title>
+      <link>https://daotoyi.github.io/categories/emacs/</link>
+      <pubDate>Fri, 18 Feb 2022 11:37:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://daotoyi.github.io/categories/latex/</link>
+      <pubDate>Tue, 15 Feb 2022 12:40:02 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://daotoyi.github.io/categories/python/</link>
+      <pubDate>Tue, 15 Feb 2022 08:13:35 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Org</title>
+      <link>https://daotoyi.github.io/categories/org/</link>
+      <pubDate>Tue, 15 Feb 2022 07:04:36 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/org/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>中医</title>
@@ -17,15 +53,6 @@
       <pubDate>Sun, 13 Feb 2022 11:15:00 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/categories/%E4%B8%AD%E5%8C%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://daotoyi.github.io/categories/emacs/</link>
-      <pubDate>Sun, 13 Feb 2022 06:58:00 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/emacs/</guid>
       <description></description>
     </item>
     

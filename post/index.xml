@@ -6,10 +6,73 @@
     <description>Recent content in Posts on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Feb 2022 11:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Feb 2022 11:37:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>elfeed 及 elfeed-org 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-elfeed-org/</link>
+      <pubDate>Fri, 18 Feb 2022 11:37:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-elfeed-org/</guid>
+      <description>elfeed elfeed elfeed-org elfeed-org example #+begin_src org Blogs :elfeed: entry-title: \(linux\|linus\|ubuntu\|kde\|gnome\) linux http://git-annex.branchable.com/design/assistant/blog/index.rss mustread Org Mode Links supported as well Software Development dev Emacs emacsmustread http://www.terminally-incoherent.com/blog/feed entry-title: \(emacs\|org-mode\) http://planet.emacsen.org/atom.xml Web Development web http://feeds.feedburner.com/qooxdoo/blog/content #+end_src</description>
+    </item>
+    
+    <item>
+      <title>org-download&#43;screenshot 使用总结</title>
+      <link>https://daotoyi.github.io/post/org-download-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:22:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/org-download-on-windows/</guid>
+      <description>org-download org-download 使用的 ImageMagick 工具无法在 winodw 上截屏（import）。 使用 org-download-yank 直接粘贴 URL 地址 手动拖动本地图片到 emacs 中. 首次拖入emacs前需要触发org-downlo</description>
+    </item>
+    
+    <item>
+      <title>flymode 在 windows 上使用总结</title>
+      <link>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:07:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</guid>
+      <description>ENV win10 emacs-27.1 spacemacs foreword spell-checking flymode export error. spacemacs 需要 aspell0.6 以上的版本，但是 Latest Version: GNU Aspell-0.50.3 (win32)（Released Dec 22, 2002）. Aspell 找到 Aspell6 的字典包，但未找到程序包,也是不能</description>
+    </item>
+    
+    <item>
+      <title>Table: latex 表格超详细教程</title>
+      <link>https://daotoyi.github.io/post/latex-export-table/</link>
+      <pubDate>Tue, 15 Feb 2022 12:40:02 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/latex-export-table/</guid>
+      <description>常用配置说明 \begin{table*}[t], *号，是为了让表格宽度与页面等宽而不是二分之一宽 \begin{center}让表格居中 \caption{Your first table.}写表格的标题 \begi</description>
+    </item>
+    
+    <item>
+      <title>Python 命名</title>
+      <link>https://daotoyi.github.io/post/python-name-standard/</link>
+      <pubDate>Tue, 15 Feb 2022 08:13:35 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-name-standard/</guid>
+      <description>Python 命名规范需要注意以下几点： 模块命名 模块推荐使用小写命名， 除非有很多字母，尽量不要用下划线 因为很多模块文件存与模块名称一致的类，模块采用小写</description>
+    </item>
+    
+    <item>
+      <title>Export PDF</title>
+      <link>https://daotoyi.github.io/post/emacs-export-pdf-setting/</link>
+      <pubDate>Tue, 15 Feb 2022 07:04:36 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-export-pdf-setting/</guid>
+      <description>LATEX_HEADER 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 1 2 3 #+ATTR_LATEX: :environment longtable :align l|lp{3cm}r|l | ..... | ..... | | ..... | ..... |</description>
+    </item>
+    
+    <item>
+      <title>Magit 使用</title>
+      <link>https://daotoyi.github.io/post/emacs-magit-manual/</link>
+      <pubDate>Sun, 13 Feb 2022 23:35:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-magit-manual/</guid>
+      <description>基本说明 status notes Head 当前处于哪个 branch Push 要 push 到哪个远程 branch Untracked files 哪些文件未被 gt 管理 Unstaged Changes 哪些文件修改了未 stage Staged Changes 哪些文件处于 staged 状态(即运行了 git adc) Unpushed to 哪些 commit 未 push</description>
+    </item>
     
     <item>
       <title>脊椎与身体健康–万病皆从背骨起</title>
@@ -45,15 +108,6 @@
       
       <guid>https://daotoyi.github.io/post/git-submodule-vs-subtree/</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 09:49] 仓库共用 两种子仓库使用方式 git submodule(子模块) git subtree(子树合并) git subtree 本质就是把子项目目录作为一个普通的文</description>
-    </item>
-    
-    <item>
-      <title>Hugo 主题 LoveIt 使用小结</title>
-      <link>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</link>
-      <pubDate>Sat, 12 Feb 2022 08:49:00 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</guid>
-      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 08:49] compatible</description>
     </item>
     
     <item>
