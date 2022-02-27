@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/docker/</link>
+    <description>Recent content in Docker on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Feb 2022 11:53:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker 提交推送</title>
+      <link>https://daotoyi.github.io/post/docker-push-to-dockerhub/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-push-to-dockerhub/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker commit 1 docker commit -m &amp;#34;What you did to the image&amp;#34; -a &amp;#34;Author Name&amp;#34; container_id repository/new_image_name -m 是提交镜像的备注 -a 用于指定作者名 container_id 是 Docker Hub 用户名 当我们提交新镜像时，新生成的镜像也会在我们的</description>
+    </item>
+    
+    <item>
+      <title>Docker 安装</title>
+      <link>https://daotoyi.github.io/post/docker-install-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 11:31:01 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-install-manual/</guid>
+      <description>官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的 GPG</description>
+    </item>
+    
+  </channel>
+</rss>
