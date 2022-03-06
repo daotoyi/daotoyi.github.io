@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL) - daoyi site</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)" />
+<meta property="og:description" content="目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/" />
+<meta property="article:published_time" content="2022-03-05T20:58:00+08:00" />
+<meta property="article:modified_time" content="2022-03-06T17:09:24+08:00" />
+<meta itemprop="name" content="v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)">
+<meta itemprop="description" content="目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #">
+<meta itemprop="datePublished" content="2022-03-05T20:58:00&#43;08:00" />
+<meta itemprop="dateModified" content="2022-03-06T17:09:24&#43;08:00" />
+<meta itemprop="wordCount" content="1508">
+
+
+
+<meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)"/>
+<meta name="twitter:description" content="目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-03-05 </span>
+        <div class="post-category">
+            <a href="/categories/vps/"> VPS </a>
+            </div>
+          <span class="more-meta"> 1508 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#v2ray--websocket">v2ray(WebSocket)</a>
+          <ul>
+            <li><a href="#etc-v2ray-config-dot-json"><code>/etc/v2ray/config.json</code></a></li>
+          </ul>
+        </li>
+        <li><a href="#cdn">CDN</a>
+          <ul>
+            <li><a href="#cloudflare">cloudflare</a></li>
+          </ul>
+        </li>
+        <li><a href="#nginx">Nginx</a>
+          <ul>
+            <li><a href="#etc-nginx-dot-conf">/etc/nginx.conf</a></li>
+            <li><a href="#etc-nginx-sites-available-default">/etc/nginx/sites-available/default</a></li>
+          </ul>
+        </li>
+        <li><a href="#tsl">TSL</a>
+          <ul>
+            <li><a href="#certbot">Certbot</a></li>
+            <li><a href="#cloudflare">Cloudflare</a></li>
+            <li><a href="#note">note</a></li>
+          </ul>
+        </li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#camouflage-website">Camouflage website</a></li>
+        <li><a href="#note">Note</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>目前官方推荐的协议组合方式：</p>
+<ul>
+<li>VMess over Websocket with TLS</li>
+<li>VMess over TLS</li>
+<li>VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c）</li>
+<li>Shadowsocks(AEAD) over Websocket with TLS</li>
+</ul>
+<h2 id="v2ray--websocket">v2ray(WebSocket)</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">
+<span class="c1"># install docker</span>
+apt install docker
+
+<span class="c1"># docker install v2ray, new version chang repository from v2ray to vwfly</span>
+docker pull v2fly/v2fly-core
+
+<span class="c1"># create config &amp; log directory of v2ray</span>
+mkdir /etc/v2ray
+mkdir /var/log/v2ray
+
+<span class="c1"># configure</span>
+/etc/v2ray/config.json
+
+docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
+
+docker container start v2ray
+docker container stop v2ray
+docker container restart v2ray
+docker rm v2ray
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="etc-v2ray-config-dot-json"><code>/etc/v2ray/config.json</code></h3>
+<ul>
+<li>client</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;loglevel&#34;</span><span class="o">:</span> <span class="s2">&#34;warning&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/access.log&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;error&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/error.log&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;routing&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;domainStrategy&#34;</span><span class="o">:</span> <span class="s2">&#34;IPIfNonMatch&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geosite:cn&#34;</span><span class="p">]</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;chinaip&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geoip:cn&#34;</span><span class="p">]</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;adblock&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="s2">&#34;tanx.com&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;googeadsserving.cn&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;baidu.com&#34;</span>
+                <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geoip:private&#34;</span><span class="p">],</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;inbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;listen&#34;</span><span class="o">:</span> <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="s2">&#34;1080&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;socks&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;auth&#34;</span><span class="o">:</span> <span class="s2">&#34;noauth&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;udp&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="s2">&#34;127.0.0.1&#34;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;listen&#34;</span><span class="o">:</span> <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="s2">&#34;1081&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;http&#34;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;outbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;vmess&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;vnext&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">&#34;address&#34;</span><span class="o">:</span> <span class="s2">&#34;vps-ip&#34;</span><span class="p">,</span>
+                        <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">443</span><span class="p">,</span>
+                        <span class="s2">&#34;users&#34;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="p">{</span>
+                                <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;1fe91e84-7046-41c7-80f7-00a68fe1eb26&#34;</span><span class="p">,</span>
+                                <span class="s2">&#34;alterId&#34;</span><span class="o">:</span> <span class="mi">0</span> <span class="c1">// must 0, other number tested can&#39;t link.
+</span><span class="c1"></span>                            <span class="p">}</span>
+                        <span class="p">]</span>
+                    <span class="p">}</span>
+                <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="s2">&#34;streamSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;network&#34;</span><span class="o">:</span> <span class="s2">&#34;ws&#34;</span>
+                <span class="s2">&#34;security&#34;</span><span class="o">:</span> <span class="s2">&#34;none&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/ray&#34;</span>
+            <span class="p">},</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;proxy&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{},</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;blackhole&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{},</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;adblock&#34;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>server</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;loglevel&#34;</span><span class="o">:</span> <span class="s2">&#34;warning&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/access.log&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;error&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/error.log&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;routing&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;domainStrategy&#34;</span><span class="o">:</span> <span class="s2">&#34;IPIfNonMatch&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="s2">&#34;geoip:private&#34;</span>
+                <span class="p">],</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;block&#34;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;block&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="s2">&#34;bittorrent&#34;</span>
+                <span class="p">]</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;inbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;sniffing&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;enabled&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="s2">&#34;destOverride&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="s2">&#34;http&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;tls&#34;</span>
+                <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">443</span><span class="p">,</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;vmess&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;clients&#34;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;1fe91e84-7046-41c7-80f7-00a68fe1eb26&#34;</span><span class="p">,</span>
+                        <span class="s2">&#34;alterId&#34;</span><span class="o">:</span> <span class="mi">0</span>  <span class="c1">// must 0, other number tested can&#39;t link.
+</span><span class="c1"></span>                    <span class="p">}</span>
+                <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="s2">&#34;streamSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&#34;network&#34;</span><span class="o">:</span> <span class="s2">&#34;ws&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;security&#34;</span><span class="o">:</span> <span class="s2">&#34;none&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/ray&#34;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;outbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;blackhole&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;block&#34;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="cdn">CDN</h2>
+<p>可以用 freenom 注册免费域名.</p>
+<p>在 freenom 中将域名解析服务器更换为 cloudflare 的服务器, 并打开 cloudflare 的 CND 设置.</p>
+<h3 id="cloudflare">cloudflare</h3>
+<h2 id="nginx">Nginx</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># install ngix</span>
+apt -y install nginx
+
+<span class="c1"># start ngix</span>
+systemctl start ngix
+
+<span class="c1"># test nginx configuration</span>
+nginx -t
+
+nginx -s reload
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="etc-nginx-dot-conf">/etc/nginx.conf</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">user www-data;</span>
+<span class="na">w orker_processes auto;</span>
+<span class="na">pid /run/nginx.pid;</span>
+<span class="na">include /etc/nginx/modules-enabled/*.conf;</span>
+<span class="na">worker_rlimit_nofile  655350;</span>
+<span class="na">events {</span>
+  <span class="na">use epoll;</span>
+  <span class="na">worker_connections 65536;</span>
+<span class="na">}</span>
+
+<span class="na">http {</span>
+  <span class="na">sendfile on;</span>
+  <span class="na">tcp_nopush on;</span>
+  <span class="na">tcp_nodelay on;</span>
+  <span class="na">keepalive_timeout 65;</span>
+  <span class="na">types_hash_max_size 2048;</span>
+  <span class="na">include /etc/nginx/mime.types;</span>
+  <span class="na">default_type application/octet-stream;</span>
+  <span class="na">ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # Dropping SSLv3, ref: POODLE</span>
+  <span class="na">ssl_prefer_server_ciphers on;</span>
+  <span class="na">access_log /var/log/nginx-access.log;</span>
+  <span class="na">error_log /var/log/nginx-error.log;</span>
+
+  <span class="na">gzip on;</span>
+  <span class="na">server {</span>
+    <span class="na">listen 80 default_server;</span>
+    <span class="na">listen [::]:80 default_server;</span>
+    <span class="na">root /var/www/html;</span>
+
+    <span class="na">index index.html index.htm index.nginx-debian.html;</span>
+
+    <span class="na">server_name _;</span>
+
+    <span class="na">location / {</span>
+      <span class="na">try_files $uri $uri/</span> <span class="o">=</span><span class="s">404;
+</span><span class="s">    }</span>
+
+    <span class="na">location /bannedbook { # 与 V2Ray 配置中的 path 保持一致</span>
+      <span class="na">proxy_redirect off;</span>
+      <span class="na">proxy_pass http://127.0.0.1:10000; #假设WebSocket监听在环回地址的10000端口上</span>
+      <span class="na">proxy_http_version 1.1;</span>
+      <span class="na">proxy_set_header Upgrade $http_upgrade;</span>
+      <span class="na">proxy_set_header Connection &#34;upgrade&#34;;</span>
+      <span class="na">proxy_set_header Host $http_host;</span>
+
+      <span class="c1"># Show realip in v2ray access.log</span>
+      <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
+      <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+    <span class="na">}</span>
+  <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="etc-nginx-sites-available-default">/etc/nginx/sites-available/default</h3>
+<ul>
+<li><a href="https://1kb.day/posts/tor_obfs4_proxy.html">reference</a></li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">server</span> <span class="p">{</span>
+    <span class="nx">listen</span> <span class="mi">80</span><span class="p">;</span>
+    <span class="nx">listen</span> <span class="p">[</span><span class="o">::</span><span class="p">]</span><span class="o">:</span><span class="mi">80</span><span class="p">;</span> <span class="c1">//这是IPv4和IPv6的80端口监听
+</span><span class="c1"></span>    <span class="nx">server_name</span> <span class="nx">daotoyi</span><span class="p">.</span><span class="nx">tk</span><span class="p">;</span> <span class="c1">//域名
+</span><span class="c1"></span>
+    <span class="c1">// 下面是真正的ws转发给v2ray
+</span><span class="c1"></span>    <span class="nx">location</span> <span class="o">/</span><span class="nx">ray</span> <span class="p">{</span>   <span class="c1">//与V2Ray配置中的path保持一致
+</span><span class="c1"></span>        <span class="nx">proxy_redirect</span> <span class="nx">off</span><span class="p">;</span>
+        <span class="nx">proxy_pass</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//127.0.0.1:8888; //假设WebSocket监听在环回地址的8888端口上
+</span><span class="c1"></span>        <span class="nx">proxy_http_version</span> <span class="mf">1.1</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Upgrade</span> <span class="nx">$http_upgrade</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Connection</span> <span class="s2">&#34;upgrade&#34;</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Host</span> <span class="nx">$http_host</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+    <span class="nx">listen</span> <span class="mi">443</span> <span class="nx">ssl</span> <span class="nx">http2</span><span class="p">;</span>  <span class="c1">//这是IPv4和IPv6的443端口监听及ssl和http2支持
+</span><span class="c1"></span>    <span class="nx">listen</span> <span class="p">[</span><span class="o">::</span><span class="p">]</span><span class="o">:</span><span class="mi">443</span> <span class="nx">ssl</span> <span class="nx">http2</span><span class="p">;</span>
+    <span class="nx">server_name</span> <span class="nx">daotoyi</span><span class="p">.</span><span class="nx">tk</span><span class="p">;</span>   <span class="c1">//域名
+</span><span class="c1"></span>    <span class="nx">ssl_certificate</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">letsencrypt</span><span class="o">/</span><span class="nx">live</span><span class="o">/</span><span class="nx">xxxx</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">fullchain</span><span class="p">.</span><span class="nx">pem</span><span class="p">;</span>  <span class="c1">//证书路径，xxxx.xxx改成你的域名
+</span><span class="c1"></span>    <span class="nx">ssl_certificate_key</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">letsencrypt</span><span class="o">/</span><span class="nx">live</span><span class="o">/</span><span class="nx">xxxx</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">privkey</span><span class="p">.</span><span class="nx">pem</span><span class="p">;</span>
+    <span class="nx">location</span> <span class="o">/</span><span class="nx">ray</span> <span class="p">{</span>     <span class="c1">// path路径
+</span><span class="c1"></span>        <span class="nx">proxy_redirect</span> <span class="nx">off</span><span class="p">;</span>
+        <span class="nx">proxy_pass</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//127.0.0.1:8888;
+</span><span class="c1"></span>        <span class="nx">proxy_http_version</span> <span class="mf">1.1</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Upgrade</span> <span class="nx">$http_upgrade</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Connection</span> <span class="s2">&#34;upgrade&#34;</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">Host</span> <span class="nx">$http_host</span><span class="p">;</span>
+        <span class="c1">// 下面是realip日志，在access.log里面，可留可删除，随意
+</span><span class="c1"></span>        <span class="nx">proxy_set_header</span> <span class="nx">X</span><span class="o">-</span><span class="nx">Real</span><span class="o">-</span><span class="nx">IP</span> <span class="nx">$remote_addr</span><span class="p">;</span>
+        <span class="nx">proxy_set_header</span> <span class="nx">X</span><span class="o">-</span><span class="nx">Forwarded</span><span class="o">-</span><span class="nx">For</span> <span class="nx">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="tsl">TSL</h2>
+<p>要 TLS 就必须得有域名，得有个反代(如 Nginx).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">systemctl stop nginx
+
+certbot certonly --renew-by-default --email <span class="o">[</span>your-email<span class="o">]</span> -d <span class="o">[</span>xxxx.com<span class="o">](</span>damain<span class="o">)</span> -d www.xxx.com
+
+systemctl start nginx
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="certbot">Certbot</h3>
+<p>使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定</p>
+<h3 id="cloudflare">Cloudflare</h3>
+<p>客户端 v2ray 配置 <code>security</code> :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;streamSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&#34;network&#34;</span><span class="o">:</span> <span class="s2">&#34;ws&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;security&#34;</span><span class="o">:</span> <span class="s2">&#34;tls&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;wsSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/ray&#34;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果开启了 tls，cloudflare 到我们的服务器之间是需要进行全链路 ssl，否则会导致访问失败的情况</p>
+<h3 id="note">note</h3>
+<p>注: 生成证书前请关闭服务器的 Apache 或 Nginx,否则会生成失败。</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://fanqiang.gitbook.io/fanqiang/v2ss/v2ray-zhi-tls+websocket+nginx+cdn-pei-zhi-fang-fa#v2ray-wei-zhuang-wang-zhan">V2Ray之TLS+WebSocket+Nginx+CDN配置方法</a></li>
+<li><a href="https://1kb.day/posts/v2ray_tls_proxy.html">V2Ray使用Nginx实现WebSocket+TLS+Web代理</a></li>
+<li><a href="https://ericclose.github.io/V2Ray-TLS-WebSocket-Nginx-with-Cloudflare.html">V2Ray (WebSocket + TLS + Web + Cloudflare) 手动配置详细说明</a></li>
+<li><a href="http://elmagnifico.tech/2020/06/07/V2ray-WS-TLS/">V2ray WS TLS自动续签证书+订阅</a></li>
+</ul>
+<h2 id="camouflage-website">Camouflage website</h2>
+<p>隐藏 vps, 防止被墙:</p>
+<ul>
+<li>CND</li>
+<li>Nginx</li>
+<li>TSL</li>
+</ul>
+<p>为了隐藏和伪装的更逼真，弄一些英文网页放到 vps 的/var/www/html 目录下，当然，必须包括一个 index.html ,</p>
+<h2 id="note">Note</h2>
+<ul>
+<li>traffic route</li>
+</ul>
+<p>v2ray(port 80/443) &ndash;&gt; CND &ndash;&gt; Nginx(80/443-&gt;8888) &ndash;&gt; v2ray(8888:8888)</p>
+<ul>
+<li>traffic route(simple)</li>
+</ul>
+<p>v2ray(port 8888) &ndash;&gt; (8888:8888)</p>
+<ul>
+<li>&ldquo;alterId&rdquo;: 0</li>
+</ul>
+<p>must 0, other number tested can&rsquo;t link.</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-03-06
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/5a91e3fc2d80561ad4b9b0f49cca54579299b5d5" title="update weekly">(5a91e3f)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/v2ray/">v2ray</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/vpn-v2rayvpn-v2free/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">VPN</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/v2ray-manual/">
+            <span class="next-text nav-default">v2ray</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

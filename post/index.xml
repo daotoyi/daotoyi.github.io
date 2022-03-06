@@ -6,10 +6,118 @@
     <description>Recent content in Posts on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Feb 2022 11:53:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VPN</title>
+      <link>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</link>
+      <pubDate>Sun, 06 Mar 2022 16:59:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</guid>
+      <description>v2ray VPN Repo:v2ray.vpn 移动端参考 SS 设计，配置方法可参考手机版Shadowsocks技巧，“分应用VPN”快速应用设置到所有服务器配置文件。 路由 设置选项 全局 绕</description>
+    </item>
+    
+    <item>
+      <title>v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)</title>
+      <link>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</link>
+      <pubDate>Sat, 05 Mar 2022 20:58:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</guid>
+      <description>目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #</description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://daotoyi.github.io/post/v2ray-manual/</link>
+      <pubDate>Sat, 05 Mar 2022 17:20:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-manual/</guid>
+      <description>简介 V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 VS Shadowsocks Shadowsocks 只是一个简单的代理工具，而 V2Ray 定位为一个平台，任何开发者都可以利用 V2Ray 提供的模块开发出新的代理软</description>
+    </item>
+    
+    <item>
+      <title>域名</title>
+      <link>https://daotoyi.github.io/post/domain-instruction/</link>
+      <pubDate>Sat, 05 Mar 2022 16:31:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/domain-instruction/</guid>
+      <description>域名 域名（英语：Domain Name），又称网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时对计算机的定</description>
+    </item>
+    
+    <item>
+      <title>Edge 无法翻译、无法下载插件</title>
+      <link>https://daotoyi.github.io/post/edge-access-extension/</link>
+      <pubDate>Fri, 04 Mar 2022 14:44:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/edge-access-extension/</guid>
+      <description>State &amp;ldquo;TODO&amp;rdquo; from [2022-03-04 周五 14:44] 修改 host 文件 修改 C:\Windows\System32\drivers\etc 文件，增加以下内容。 1 2 3 4 5 6 7 8 9 10 11 # Edge 翻译 117.28.245.88 edge.microsoft.com # 商店扩展 117.28.245.88 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com # 微软账户 117.28.245.88 logincdn.msauth.net 117.28.245.88 login.live.com 117.28.245.88 account.live.com 117.28.245.88 acctcdn.msauth.net 注意 hots 文件不能直</description>
+    </item>
+    
+    <item>
+      <title>Docker daemon</title>
+      <link>https://daotoyi.github.io/post/docker-daemon/</link>
+      <pubDate>Thu, 03 Mar 2022 09:56:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-daemon/</guid>
+      <description>startup error 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # systemctl status docker ● docker.service - Docker Application Container Engine Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled) Active: failed (Result: exit-code) since Wed 2022-03-02 13:52:17 UTC; 2min 57s ago Docs: https://docs.docker.com Process: 8646 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE) Main PID: 8646 (code=exited, status=1/FAILURE) Mar 02 13:52:17 instance-1 systemd[1]: docker.service: Service hold-off time</description>
+    </item>
+    
+    <item>
+      <title>Docker 远程访问</title>
+      <link>https://daotoyi.github.io/post/docker-remote-access/</link>
+      <pubDate>Thu, 03 Mar 2022 09:54:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-remote-access/</guid>
+      <description>默认情况下，Docker 守护进程会生成一个 socket 文件来进行本地进程通信，而不会监听任何端口，因此只能在本地使用 docker 客户端或者使用 Docker API 进行操作。 如果</description>
+    </item>
+    
+    <item>
+      <title>System Port</title>
+      <link>https://daotoyi.github.io/post/system-port/</link>
+      <pubDate>Wed, 02 Mar 2022 16:02:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/system-port/</guid>
+      <description>netstat 提供有关网络连接的信息. netstat -tunlp -t：显示 TCP 端口。 -u：显示 UDP 端口。 -n：显示数字地址而不是解析主机。 -l：仅显示侦听端口。 -p：显示监听器进</description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://daotoyi.github.io/post/google-cloud-platform/</link>
+      <pubDate>Wed, 02 Mar 2022 15:37:56 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-cloud-platform/</guid>
+      <description>GCP（Google Cloud Platform）入门 防火墙 建站之后若无法访问, 可能需要设置防火墙规则(入站防火墙)(GCP 建站及配置). 流量方向是：</description>
+    </item>
+    
+    <item>
+      <title>RSS</title>
+      <link>https://daotoyi.github.io/post/rss-instruction/</link>
+      <pubDate>Sun, 27 Feb 2022 21:42:36 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rss-instruction/</guid>
+      <description>(Really Simple Syndication,简易信息聚合) RSSHub RSSHub 使用文档 Docker部署 heroku部署 Huginn Huginn is a system for building agents that perform automated tasks for you online. 中文社区 英文官网</description>
+    </item>
+    
+    <item>
+      <title>Docker 使用镜像</title>
+      <link>https://daotoyi.github.io/post/docker-operation-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-operation-manual/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 Docker Hub 下载这些镜像，Docker 公司在运营这个 Docker H</description>
+    </item>
+    
+    <item>
+      <title>Docker 初识</title>
+      <link>https://daotoyi.github.io/post/docker-instruction/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-instruction/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker 是一个开源的应用容器引擎。Docker 可以让开发者打包他们创建的应用以及相应的依赖包到一个可移植、轻量级的容器中。Docke</description>
+    </item>
     
     <item>
       <title>Docker 提交推送</title>
@@ -41,7 +149,7 @@
     <item>
       <title>Huginn</title>
       <link>https://daotoyi.github.io/post/huginn-manual/</link>
-      <pubDate>Sun, 27 Feb 2022 08:18:31 +0800</pubDate>
+      <pubDate>Sun, 27 Feb 2022 08:19:00 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/post/huginn-manual/</guid>
       <description>Huginn is a system for building agents that perform automated tasks for you online. 中文社区 英文官网 heroku deploy 利用 Huginn 打造一站式信息阅读平台 heroku 空间几点说明： heroku 免费账户的网站在 30 分钟内无人访问后会自动关闭（</description>
@@ -216,15 +324,6 @@
       
       <guid>https://daotoyi.github.io/post/emacs-snippets-manual/</guid>
       <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
-    </item>
-    
-    <item>
-      <title>Hugo 使用总结</title>
-      <link>https://daotoyi.github.io/post/hugo-manual/</link>
-      <pubDate>Sun, 06 Feb 2022 08:19:00 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml ox-hugo 1 2 3 4 5 6 7 :PROPERTIES: :EXPORT_FILE_NAME: :EXPORT_DESCRIPTION: :EXPORT_HUGO_BUNDLE: :EXPORT_HUGO_TAGS: :EXPORT_HUGO_CATEGORIES: :END: 会覆盖 orgmode 里的 tags 属性, 留空或不设置则</description>
     </item>
     
     <item>

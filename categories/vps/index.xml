@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPS on daoyi site</title>
+    <link>https://daotoyi.github.io/categories/vps/</link>
+    <description>Recent content in VPS on daoyi site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VPN</title>
+      <link>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</link>
+      <pubDate>Sun, 06 Mar 2022 16:59:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</guid>
+      <description>v2ray VPN Repo:v2ray.vpn 移动端参考 SS 设计，配置方法可参考手机版Shadowsocks技巧，“分应用VPN”快速应用设置到所有服务器配置文件。 路由 设置选项 全局 绕</description>
+    </item>
+    
+    <item>
+      <title>v2ray(WebSocket&#43;Nginx&#43;CDN&#43;TSL)</title>
+      <link>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</link>
+      <pubDate>Sat, 05 Mar 2022 20:58:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</guid>
+      <description>目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #</description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://daotoyi.github.io/post/v2ray-manual/</link>
+      <pubDate>Sat, 05 Mar 2022 17:20:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-manual/</guid>
+      <description>简介 V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 VS Shadowsocks Shadowsocks 只是一个简单的代理工具，而 V2Ray 定位为一个平台，任何开发者都可以利用 V2Ray 提供的模块开发出新的代理软</description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://daotoyi.github.io/post/google-cloud-platform/</link>
+      <pubDate>Wed, 02 Mar 2022 15:37:56 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-cloud-platform/</guid>
+      <description>GCP（Google Cloud Platform）入门 防火墙 建站之后若无法访问, 可能需要设置防火墙规则(入站防火墙)(GCP 建站及配置). 流量方向是：</description>
+    </item>
+    
+  </channel>
+</rss>

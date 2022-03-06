@@ -6,10 +6,37 @@
     <description>Recent content in Tags on daoyi site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Feb 2022 11:37:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VPN</title>
+      <link>https://daotoyi.github.io/tags/vpn/</link>
+      <pubDate>Sun, 06 Mar 2022 16:59:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://daotoyi.github.io/tags/v2ray/</link>
+      <pubDate>Sat, 05 Mar 2022 20:58:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/v2ray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>domain</title>
+      <link>https://daotoyi.github.io/tags/domain/</link>
+      <pubDate>Sat, 05 Mar 2022 16:31:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/domain/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>elfeed</title>
