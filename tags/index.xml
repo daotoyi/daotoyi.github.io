@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on daoyi site</title>
+    <title>Tags on DaoyiSite</title>
     <link>https://daotoyi.github.io/tags/</link>
-    <description>Recent content in Tags on daoyi site</description>
+    <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0800</lastBuildDate>
@@ -26,6 +26,15 @@
       <pubDate>Sat, 05 Mar 2022 20:58:00 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/tags/v2ray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://daotoyi.github.io/tags/gcp/</link>
+      <pubDate>Sat, 05 Mar 2022 17:20:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/gcp/</guid>
       <description></description>
     </item>
     

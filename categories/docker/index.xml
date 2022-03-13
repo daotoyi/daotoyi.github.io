@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on daoyi site</title>
+    <title>Docker on DaoyiSite</title>
     <link>https://daotoyi.github.io/categories/docker/</link>
-    <description>Recent content in Docker on daoyi site</description>
+    <description>Recent content in Docker on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 03 Mar 2022 09:56:00 +0800</lastBuildDate>
