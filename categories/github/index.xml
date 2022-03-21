@@ -6,10 +6,46 @@
     <description>Recent content in Github on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Feb 2022 09:49:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Mar 2022 22:33:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github Actions</title>
+      <link>https://daotoyi.github.io/post/github-actions/</link>
+      <pubDate>Sat, 19 Mar 2022 22:33:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-actions/</guid>
+      <description>GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep</description>
+    </item>
+    
+    <item>
+      <title>Github 推送验证</title>
+      <link>https://daotoyi.github.io/post/github-access-verification-with-token/</link>
+      <pubDate>Sat, 19 Mar 2022 13:00:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-access-verification-with-token/</guid>
+      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 git remote set-url origin https://userName:token@github.com/userName/reponame.git # or git remote set-url origin https://token@github.com/userName/reponame.git git remote set-url origin https://hao203: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@github.com/hao203/Demo.git 将 token 当</description>
+    </item>
+    
+    <item>
+      <title>Github Profile</title>
+      <link>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</link>
+      <pubDate>Sat, 19 Mar 2022 10:51:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</guid>
+      <description>Metrics !Metrics 统计卡片 stats !Anurag&amp;rsquo;s GitHub stats theme dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula language ![这里写昵称&amp;rsquo;s Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=%E8%BF%99%E9%87%8C%E6%9B%BF%E6%8D%A2%E6%88%90%E4%BD%A0%E7%9A%84 GitHub ID&amp;amp;show_icons=true&amp;amp;count_private=true&amp;amp;theme=gotham) !daotoyi&amp;rsquo;s Most used languages 统计卡片并列显示 stats 和 language 卡片要紧接着写,不能空格换</description>
+    </item>
+    
+    <item>
+      <title>Github 图床显示图片</title>
+      <link>https://daotoyi.github.io/post/github-picsbed-show-pictures/</link>
+      <pubDate>Wed, 16 Mar 2022 00:30:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-picsbed-show-pictures/</guid>
+      <description>Github/Gitee 格式 可显示的链接格式: https://raw.githubusercontent.com/UserName/RepoName/BranchName/ 如:https://raw.githubusercontent.com/daotoyi/picsbed/main/</description>
+    </item>
     
     <item>
       <title>git submodule VS subtree</title>

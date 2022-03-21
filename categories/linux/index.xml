@@ -6,15 +6,24 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Mar 2022 16:45:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Mar 2022 20:11:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Compare with Windows</title>
+      <title>Linux capacity &amp;&amp; reduce</title>
+      <link>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</link>
+      <pubDate>Mon, 14 Mar 2022 20:11:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</guid>
+      <description>Reduce capacity 方法 1：给项目的 git 仓库瘦身 1 2 3 4 5 6 # 1.删除无用的分支 $ git branch -d &amp;lt;branch_name&amp;gt; # 2.删除无用的 tag $ git tag -d &amp;lt;tag_name&amp;gt; # 3.清理本地版本库 $ git gc --prune=now 方法 2：删除</description>
+    </item>
+    
+    <item>
+      <title>Linux compare with Windows</title>
       <link>https://daotoyi.github.io/post/linux-compare-with-windows/</link>
-      <pubDate>Tue, 08 Mar 2022 16:45:59 +0800</pubDate>
+      <pubDate>Sun, 13 Mar 2022 15:17:00 +0800</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-compare-with-windows/</guid>
       <description>CMD link (mklink ln) MKLINK [[/D] | [/H] | [/J]] Link Target para function /D 创建目录符号链接。默认为文件符号链接。 /H 创建硬链接而非符号链接。 /J 创建目录联接。 Lin k 指定新的符号链接名称。 Tar get</description>
