@@ -6,10 +6,46 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Mar 2022 11:29:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Mar 2022 19:04:54 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Sun, 27 Mar 2022 19:04:54 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Git 操作对比</title>
+      <link>https://daotoyi.github.io/post/git-common-manual/</link>
+      <pubDate>Sat, 26 Mar 2022 09:48:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-common-manual/</guid>
+      <description>chechkout VS reset VS revert 命令 作用域 常用情景 git reset 提交层面 在私有分支上舍弃一些没有提交的更改 git reset 文件层面 将文件从缓存区中移除 git checkout 提交层面 切换分支或查看旧版本 git</description>
+    </item>
+    
+    <item>
+      <title>CPU Frequency</title>
+      <link>https://daotoyi.github.io/post/cpu-frequency/</link>
+      <pubDate>Fri, 25 Mar 2022 22:10:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cpu-frequency/</guid>
+      <description>主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH</description>
+    </item>
+    
+    <item>
+      <title>CMD stty</title>
+      <link>https://daotoyi.github.io/post/stty-cmd/</link>
+      <pubDate>Fri, 25 Mar 2022 21:03:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/stty-cmd/</guid>
+      <description>Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存</description>
+    </item>
     
     <item>
       <title>ConnectUtility</title>
@@ -426,7 +462,7 @@
     </item>
     
     <item>
-      <title>github-pages 托管静态网页绑定自定义域名</title>
+      <title>Github-pages 托管静态网页绑定自定义域名</title>
       <link>https://daotoyi.github.io/post/github-pages-custome-domain-name-ssl/</link>
       <pubDate>Mon, 07 Feb 2022 08:29:00 +0800</pubDate>
       

@@ -6,10 +6,19 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Mar 2022 20:11:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Mar 2022 21:03:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CMD stty</title>
+      <link>https://daotoyi.github.io/post/stty-cmd/</link>
+      <pubDate>Fri, 25 Mar 2022 21:03:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/stty-cmd/</guid>
+      <description>Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存</description>
+    </item>
     
     <item>
       <title>Linux capacity &amp;&amp; reduce</title>

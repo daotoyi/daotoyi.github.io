@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
 <meta property="article:published_time" content="2022-03-15T22:26:00+08:00" />
-<meta property="article:modified_time" content="2022-03-21T18:54:48+08:00" />
+<meta property="article:modified_time" content="2022-03-27T19:08:08+08:00" />
 <meta itemprop="name" content="WordPress 笔记">
 <meta itemprop="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建">
 <meta itemprop="datePublished" content="2022-03-15T22:26:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-03-21T18:54:48&#43;08:00" />
-<meta itemprop="wordCount" content="817">
+<meta itemprop="dateModified" content="2022-03-27T19:08:08&#43;08:00" />
+<meta itemprop="wordCount" content="901">
 
 
 
@@ -137,9 +137,9 @@
       <div class="post-meta">
         <span class="post-time"> 2022-03-15 </span>
         <div class="post-category">
-            <a href="/categories/vps/"> VPS </a>
+            <a href="/categories/blog/"> Blog </a>
             </div>
-          <span class="more-meta"> 817 words </span>
+          <span class="more-meta"> 901 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -160,7 +160,16 @@
             <li><a href="#安装在云平台上">安装在云平台上</a></li>
           </ul>
         </li>
-        <li><a href="#notes">Notes</a></li>
+        <li><a href="#backup">Backup</a></li>
+        <li><a href="#notes">Notes</a>
+          <ul>
+            <li><a href="#宝塔面板登陆地址为">宝塔面板登陆地址为</a></li>
+            <li><a href="#wordpress-后台登录地址为">WordPress 后台登录地址为</a></li>
+            <li><a href="#访问-wordpress">访问 WordPress</a></li>
+            <li><a href="#wordpress-首页地址为">WordPress 首页地址为</a></li>
+            <li><a href="#虚拟机安装-wp">虚拟机安装 WP</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -210,45 +219,42 @@
 <ul>
 <li>参考安装在虚拟机即可</li>
 </ul>
-<h2 id="notes">Notes</h2>
+<h2 id="backup">Backup</h2>
 <ul>
-<li>
-<p>宝塔面板登陆地址为</p>
+<li><a href="https://www.guoyuguang.com/best-wordpress-website-backup-plugins/">最好的WordPress网站备份插件（2020版）</a></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="宝塔面板登陆地址为">宝塔面板登陆地址为</h3>
 <ul>
 <li>ip:port</li>
 <li>ip:port/xxxxxxxx
 <ul>
 <li>xxxxxxxx:新装机器都会随机一个 8 位字符的安全入口名称</li>
+<li>如: <a href="http://192.168.220.149:8888/5996ef82/">http://192.168.220.149:8888/5996ef82/</a></li>
 <li>可以在面板设置处修改</li>
 <li>查看面板入口：/etc/init.d/bt default</li>
 <li>【关闭安全入口】将使您的面板登录地址被直接暴露在互联网上，非常危险，请谨慎操作</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>
-<p>WordPress 后台登录地址为</p>
+<h3 id="wordpress-后台登录地址为">WordPress 后台登录地址为</h3>
 <ul>
 <li>ip/wp-admin/</li>
 <li>域名/wp-admin/</li>
-<li>例如：<a href="http://192.168.91.130/wp-admin/">http://192.168.91.130/wp-admin/</a> 或者<a href="http://www.baidu.com/wp-admin/">http://www.baidu.com/wp-admin/</a></li>
+<li>例如：<a href="http://192.168.220.149/wp-admin/">http://192.168.220.149/wp-admin/</a> 或者<a href="http://www.baidu.com/wp-admin/">http://www.baidu.com/wp-admin/</a></li>
 </ul>
-</li>
-<li>
-<p>WordPress 首页地址为</p>
+<h3 id="访问-wordpress">访问 WordPress</h3>
+<p>安装完成后,需要在宝塔面板的 &ldquo;网站 - 默认站点&quot;中选择站点,否则可能访问不成功.</p>
+<h3 id="wordpress-首页地址为">WordPress 首页地址为</h3>
 <ul>
 <li>ip</li>
 <li>域名</li>
-<li>例如：<a href="http://192.168.91.130/">http://192.168.91.130/</a> 或者 <a href="http://www.baidu.com/">http://www.baidu.com/</a></li>
+<li>例如：<a href="http://192.168.220.149/">http://192.168.220.149/</a> 或者 <a href="http://www.baidu.com/">http://www.baidu.com/</a></li>
 </ul>
-</li>
-<li>
-<p>虚拟机安装 WP</p>
+<h3 id="虚拟机安装-wp">虚拟机安装 WP</h3>
 <ul>
 <li>安装完成会生成一个外网访问地址和一个内网访问地址</li>
 <li>WP 的域名设置为 127.0.0.1,在主机上通过内网地址登陆访问.</li>
-</ul>
-</li>
 </ul>
 
     </div>
@@ -261,8 +267,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-03-21
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0dcc2aecf87e89aeac7ceeed3c89e16631c44983" title="update weekly">(0dcc2ae)</a>
+        2022-03-27
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/d90340a40cc4ff950063fbe9c9e734d25ee3fad6" title="update weekly">(d90340a)</a>
     </span>
   </p>
   
