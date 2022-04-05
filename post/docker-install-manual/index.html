@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的 GPG" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,21 +40,22 @@
 
 
 <meta property="og:title" content="Docker 安装" />
-<meta property="og:description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的 GPG" />
+<meta property="og:description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/docker-install-manual/" />
-<meta property="article:published_time" content="2022-02-27T11:31:01+08:00" />
-<meta property="article:modified_time" content="2022-03-27T19:08:08+08:00" />
+<meta property="article:published_time" content="2022-02-27T11:53:00+08:00" />
+<meta property="article:modified_time" content="2022-04-05T17:30:38+08:00" />
 <meta itemprop="name" content="Docker 安装">
-<meta itemprop="description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的 GPG">
-<meta itemprop="dateModified" content="2022-03-27T19:08:08&#43;08:00" />
-<meta itemprop="wordCount" content="146">
+<meta itemprop="description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的">
+<meta itemprop="datePublished" content="2022-02-27T11:53:00&#43;08:00" />
+<meta itemprop="dateModified" content="2022-04-05T17:30:38&#43;08:00" />
+<meta itemprop="wordCount" content="253">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker 安装"/>
-<meta name="twitter:description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的 GPG"/>
+<meta name="twitter:description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -138,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/docker/"> Docker </a>
             </div>
-          <span class="more-meta"> 146 words </span>
+          <span class="more-meta"> 253 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -147,11 +148,21 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#ubuntu">Ubuntu</a></li>
+        <li><a href="#redhat">Redhat</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
       <p>官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。</p>
+<h2 id="ubuntu">Ubuntu</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -188,6 +199,45 @@ sudo apt install docker-ce
 sudo systemctl status docker
 </code></pre></td></tr></table>
 </div>
+</div><h2 id="redhat">Redhat</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum-utils提供yum-config-manager工具</span>
+yum install -y yum-utils
+
+#
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+<span class="c1"># 安装社区版本</span>
+yum install -y docker-ce
+
+systemctl start docker
+
+<span class="c1">#　移除docker</span>
+yum remove docker-ce
+
+<span class="c1"># 移除镜像，容器，卷，网络，自定义文件等</span>
+rm -rf /var/lib/docker
+</code></pre></td></tr></table>
+</div>
 </div>
     </div>
 
@@ -199,8 +249,8 @@ sudo systemctl status docker
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-03-27
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/d90340a40cc4ff950063fbe9c9e734d25ee3fad6" title="update weekly">(d90340a)</a>
+        2022-04-05
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/25e762c61841af9848a24284120056c98869bcce" title="update weekly">(25e762c)</a>
     </span>
   </p>
   
@@ -209,13 +259,13 @@ sudo systemctl status docker
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/docker-push-to-dockerhub/">
+        <a class="prev" href="/post/docker-instruction/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Docker 提交推送</span>
+            <span class="prev-text nav-default">Docker 初识</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/inoreader-access-in-mainland/">
-            <span class="next-text nav-default">Inoreader 访问</span>
+        <a class="next" href="/post/docker-push-to-dockerhub/">
+            <span class="next-text nav-default">Docker 提交推送</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -6,17 +6,53 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Mar 2022 21:03:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Mar 2022 22:53:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Manjaro 使用小结</title>
+      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
+      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
+    </item>
+    
+    <item>
+      <title>CMD yum/dnf</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>CMD yum/dnf/pacman</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-packages-manager-/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-packages-manager-/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>CMD yum/dnf/pacman</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
       <title>CMD stty</title>
-      <link>https://daotoyi.github.io/post/stty-cmd/</link>
+      <link>https://daotoyi.github.io/post/linux-cmd-stty/</link>
       <pubDate>Fri, 25 Mar 2022 21:03:00 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/stty-cmd/</guid>
+      <guid>https://daotoyi.github.io/post/linux-cmd-stty/</guid>
       <description>Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存</description>
     </item>
     
