@@ -6,10 +6,19 @@
     <description>Recent content in org on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Feb 2022 11:17:37 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Apr 2022 23:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org Table calculate</title>
+      <link>https://daotoyi.github.io/post/emacs-org-table-calculate/</link>
+      <pubDate>Tue, 05 Apr 2022 23:10:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
+      <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&amp;rsquo;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+    </item>
     
     <item>
       <title>Hugo-markdown</title>

@@ -6,10 +6,19 @@
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Apr 2022 23:44:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 17:52:00 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google RGB</title>
+      <link>https://daotoyi.github.io/post/google-rgb/</link>
+      <pubDate>Thu, 07 Apr 2022 17:52:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-rgb/</guid>
+      <description>color 0x RGB 蓝色 4285F4 RGB: (66,133,244) 绿色 34A853 RGB: (52,168,83) 黄色 FBB05 RGB:(251,188,5) 红色 EA4335 RGB:(234,67,53)</description>
+    </item>
     
     <item>
       <title>Nginx</title>

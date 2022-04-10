@@ -6,10 +6,37 @@
     <description>Recent content in Tools on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Apr 2022 06:47:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 22:24:33 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FastKey keybinding</title>
+      <link>https://daotoyi.github.io/post/fastkeysautomation/</link>
+      <pubDate>Thu, 07 Apr 2022 22:24:33 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/fastkeysautomation/</guid>
+      <description>   key func     Escape double-click close window   Alt + Inset window always on top+   Alt + G google search text   trl + ALT + T translate webpage   ALT + H hide other window   ALT + W stop watch timer   ALT + T make window transparent   Alt + Q recent files/folder   Alt + V paste without formatting   ALT + snipping tool    </description>
+    </item>
+    
+    <item>
+      <title>FastKey keybinding</title>
+      <link>https://daotoyi.github.io/post/fastkey/</link>
+      <pubDate>Thu, 07 Apr 2022 22:21:27 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/fastkey/</guid>
+      <description>   key func     Escape double-click close window   Alt + Inset window always on top+   Alt + G google search text   trl + ALT + T translate webpage   ALT + H hide other window   ALT + W stop watch timer   ALT + T make window transparent   Alt + Q recent files/folder   Alt + V paste without formatting   ALT + snipping tool    </description>
+    </item>
+    
+    <item>
+      <title>Kindle epub mobi azw3</title>
+      <link>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</link>
+      <pubDate>Tue, 05 Apr 2022 23:15:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</guid>
+      <description>epub 格式，是通用的电子书格式，主流阅读 APP 都支持。 mobi 格式，是亚马逊开发的电子书传输格式， azw3，则是加了版权保护的 mobi 格式。 epub 格式电子书最大的特</description>
+    </item>
     
     <item>
       <title>Mariadb/Mysql common command</title>
