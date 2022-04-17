@@ -6,10 +6,37 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 23:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Apr 2022 17:10:08 +0800</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ref</title>
+      <link>https://daotoyi.github.io/post/linux/</link>
+      <pubDate>Fri, 15 Apr 2022 17:10:08 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux/</guid>
+      <description>多个gcc/glibc版本的共存及指定gcc版本的编译</description>
+    </item>
+    
+    <item>
+      <title>Selinux</title>
+      <link>https://daotoyi.github.io/post/linux-selinux/</link>
+      <pubDate>Fri, 15 Apr 2022 14:46:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-selinux/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi</description>
+    </item>
+    
+    <item>
+      <title>Linux Proxy</title>
+      <link>https://daotoyi.github.io/post/linux-rpoxy/</link>
+      <pubDate>Sun, 10 Apr 2022 16:43:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-rpoxy/</guid>
+      <description>local proxy export http_proxy=http://127.0.0.1:port config 1 2 3 4 5 6 7 8 9 10 no_proxy=localhost,127.0.0.0/8,*.local # 访问指定地址时不使用代理，可以用逗号分隔多个地址 NO_PROXY=localhost,127.0.0.0/8,*.local all_proxy=socks://proxy.example.com:8080/ ALL_PROXY=socks://proxy.example.com:8080/ http_proxy=http://proxy.example.com:8080 HTTP_PROXY=http://proxy.example.com:8080 ftp_proxy=http://proxy.example.com:8080 FTP_PROXY=http://proxy.example.com:8080 https_proxy=http://proxy.example.com:8080 HTTPS_PROXY=http://proxy.example.com:8080</description>
+    </item>
     
     <item>
       <title>实时内核/系统</title>

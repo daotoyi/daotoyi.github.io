@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Sublime hotkey - DaoyiSite</title>
+  <title>Sublime Hotkey - DaoyiSite</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -39,22 +39,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Sublime hotkey" />
+<meta property="og:title" content="Sublime Hotkey" />
 <meta property="og:description" content="通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl &#43; Shift &#43; P：调出命令板（Command Palette" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/sublime-hotkey/" />
 <meta property="article:published_time" content="2022-04-02T12:29:00+08:00" />
-<meta property="article:modified_time" content="2022-04-10T17:45:27+08:00" />
-<meta itemprop="name" content="Sublime hotkey">
+<meta property="article:modified_time" content="2022-04-17T17:10:03+08:00" />
+<meta itemprop="name" content="Sublime Hotkey">
 <meta itemprop="description" content="通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl &#43; Shift &#43; P：调出命令板（Command Palette">
 <meta itemprop="datePublished" content="2022-04-02T12:29:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-04-10T17:45:27&#43;08:00" />
-<meta itemprop="wordCount" content="1043">
+<meta itemprop="dateModified" content="2022-04-17T17:10:03&#43;08:00" />
+<meta itemprop="wordCount" content="1116">
 
 
 
 <meta itemprop="keywords" content="hotkey," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Sublime hotkey"/>
+<meta name="twitter:title" content="Sublime Hotkey"/>
 <meta name="twitter:description" content="通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl &#43; Shift &#43; P：调出命令板（Command Palette"/>
 
 <!--[if lte IE 9]>
@@ -132,14 +132,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Sublime hotkey</h1>
+      <h1 class="post-title">Sublime Hotkey</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-04-02 </span>
         <div class="post-category">
             <a href="/categories/tools/"> Tools </a>
             </div>
-          <span class="more-meta"> 1043 words </span>
+          <span class="more-meta"> 1116 words </span>
           <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -160,6 +160,8 @@
         <li><a href="#跳转-jumping">跳转（Jumping）</a></li>
         <li><a href="#窗口-window">窗口（Window）</a></li>
         <li><a href="#屏幕-screen">屏幕（Screen）</a></li>
+        <li><a href="#折叠代码">折叠代码</a></li>
+        <li><a href="#keymap">keymap</a></li>
       </ul>
     </li>
   </ul>
@@ -238,7 +240,54 @@
 <li>Alt + Shift + 5：进行上下左右分屏</li>
 <li>分屏之后，使用 Ctrl + 数字键跳转到指定屏，使用 Ctrl + Shift + 数字键将当前屏移动到指定屏</li>
 </ul>
-
+<h2 id="折叠代码">折叠代码</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">Ctrl+Shift+[ 折叠代码</span>
+<span class="na">Ctrl+Shift+] 展开代码</span>
+<span class="na">Ctrl+KT 折叠属性</span>
+<span class="na">Ctrl+K0 展开所有</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="keymap">keymap</h2>
+<p>Preferences -&gt; Key Bindings</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">[</span>
+  <span class="p">{</span> <span class="s2">&#34;keys&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;ctrl+shift+c&#34;</span><span class="p">],</span> <span class="s2">&#34;command&#34;</span><span class="o">:</span> <span class="s2">&#34;cancel_build&#34;</span> <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&#34;keys&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;f5&#34;</span><span class="p">],</span>
+        <span class="s2">&#34;caption&#34;</span><span class="o">:</span> <span class="s2">&#34;SublimeREPL: Python - RUN current file&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;command&#34;</span><span class="o">:</span> <span class="s2">&#34;run_existing_window_command&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;args&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;repl_python_run&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;file&#34;</span><span class="o">:</span> <span class="s2">&#34;config/Python/Main.sublime-menu&#34;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -249,8 +298,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-04-10
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0e0c6319e129d2b0fbed1789f142f94f0f681e76" title="update weekly &amp;&amp; deleted LoveIt">(0e0c631)</a>
+        2022-04-17
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/716ad7c006982dbf2e486b533d31b8f45d296292" title="update weekly">(716ad7c)</a>
     </span>
   </p>
   
