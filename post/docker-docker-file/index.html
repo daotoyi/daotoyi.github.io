@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="Ref Dockerfile介绍 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # This dockerfile uses" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,22 +40,22 @@
 
 
 <meta property="og:title" content="Docker Dockerfile" />
-<meta property="og:description" content="Ref Dockerfile介绍 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # This dockerfile uses" />
+<meta property="og:description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/docker-docker-file/" />
-<meta property="article:published_time" content="2022-04-05T15:32:00+08:00" />
-<meta property="article:modified_time" content="2022-04-17T17:10:03+08:00" />
+<meta property="article:published_time" content="2022-04-05T15:32:00+00:00" />
+<meta property="article:modified_time" content="2022-05-01T18:50:14+08:00" />
 <meta itemprop="name" content="Docker Dockerfile">
-<meta itemprop="description" content="Ref Dockerfile介绍 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # This dockerfile uses">
-<meta itemprop="datePublished" content="2022-04-05T15:32:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-04-17T17:10:03&#43;08:00" />
-<meta itemprop="wordCount" content="749">
+<meta itemprop="description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17">
+<meta itemprop="datePublished" content="2022-04-05T15:32:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-05-01T18:50:14&#43;08:00" />
+<meta itemprop="wordCount" content="911">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker Dockerfile"/>
-<meta name="twitter:description" content="Ref Dockerfile介绍 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # This dockerfile uses"/>
+<meta name="twitter:description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/docker/"> Docker </a>
             </div>
-          <span class="more-meta"> 749 words </span>
+          <span class="more-meta"> 911 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -174,6 +174,7 @@
       <h2 id="ref">Ref</h2>
 <ul>
 <li><a href="http://www.dockerinfo.net/dockerfile%e4%bb%8b%e7%bb%8d">Dockerfile介绍</a></li>
+<li><a href="https://www.cnblogs.com/clsn/p/8410309.html">Docker 容器入门</a></li>
 </ul>
 <h2 id="structure">structure</h2>
 <p>Dockerfile 分为四部分：</p>
@@ -231,12 +232,33 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker image build  -t centos6.8-ssh .
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># docker image build  -t image .</span>
+docker build  -t ImageName:TagName dir
+docker build github.com/creack/docker-firefox
+docker build -f /path/to/a/Dockerfile .
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="network">network</h2>
+</div><ul>
+<li>-f - 指定构建镜像的 Dockerfile 文件（Dockerfile 可不在当前路径下）
+<ul>
+<li>如果不使用 -f，则默认将上下文路径下的名为 Dockerfile 的文件认为是构建镜像的 &ldquo;Dockerfile&rdquo;</li>
+</ul>
+</li>
+<li>-t - 为镜像添加标签</li>
+<li>ImageName - 这是要为镜像命名的名称。</li>
+<li>TagName - 这是要为镜像提供的标签。</li>
+<li>Dir - Docker 文件所在的目录。
+<ul>
+<li>构建镜像的过程中，可以且只可以引用上下文中的任何文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="network">network</h2>
 <table>
 <thead>
 <tr>
@@ -276,6 +298,10 @@
 <p>实际上，Docker Hub 中 99% 的镜像都是通过在 base 镜像中安装和配置需要的软件构建出来的。</p>
 <p>镜像分层最大的一个好处就是共享资源。</p>
 <p>比如说有多个镜像都从相同的 base 镜像构建而来，那么 Docker Host 只需在磁盘上保存一份 base 镜像；同时内存中也只需加载一份 base 镜像，就可以为所有容器服务了。而且镜像的每一层都可以被共享。</p>
+<figure>
+    <img src="https://images2017.cnblogs.com/blog/1190037/201802/1190037-20180203180355656-1765414705.png"/> 
+</figure>
+
 <h2 id="note">note</h2>
 <h3 id="run-and-cmd">RUN &amp; CMD</h3>
 <h4 id="run">RUN</h4>
@@ -326,8 +352,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-04-17
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/716ad7c006982dbf2e486b533d31b8f45d296292" title="update weekly">(716ad7c)</a>
+        2022-05-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4f5e635f2b2e8eb6000bd8ed0502323fdfbf009c" title="update weekly">(4f5e635)</a>
     </span>
   </p>
   

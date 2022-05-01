@@ -43,13 +43,13 @@
 <meta property="og:description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/v2ray-manual/" />
-<meta property="article:published_time" content="2022-03-05T17:20:00+08:00" />
-<meta property="article:modified_time" content="2022-04-17T17:10:03+08:00" />
+<meta property="article:published_time" content="2022-03-05T17:20:00+00:00" />
+<meta property="article:modified_time" content="2022-05-01T18:50:14+08:00" />
 <meta itemprop="name" content="v2ray 笔记">
 <meta itemprop="description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu">
-<meta itemprop="datePublished" content="2022-03-05T17:20:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-04-17T17:10:03&#43;08:00" />
-<meta itemprop="wordCount" content="6300">
+<meta itemprop="datePublished" content="2022-03-05T17:20:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-05-01T18:50:14&#43;08:00" />
+<meta itemprop="wordCount" content="6586">
 
 
 
@@ -139,8 +139,8 @@
         <div class="post-category">
             <a href="/categories/vps/"> VPS </a>
             </div>
-          <span class="more-meta"> 6300 words </span>
-          <span class="more-meta"> 13 mins read </span>
+          <span class="more-meta"> 6586 words </span>
+          <span class="more-meta"> 14 mins read </span>
         
       </div>
     </header>
@@ -195,6 +195,7 @@
             <li><a href="#预定义域名列表-geosite">预定义域名列表 geosite:</a></li>
             <li><a href="#从外部文件中加载域名规则-ext">从外部文件中加载域名规则 ext:</a></li>
             <li><a href="#ip-路由规则">IP 路由规则</a></li>
+            <li><a href="#路由域名规则">路由域名规则</a></li>
           </ul>
         </li>
         <li><a href="#reverse-nat-dnss">reverse/NAT-DNSS</a>
@@ -260,90 +261,6 @@
 <p>V2ray 官方对 VLESS 协议的定义是“性能至上、可扩展性空前，目标是全场景终极协议”。</p>
 <p>VLESS 是一种无状态的轻量级数据传输协议，被定义为下一代 V2ray 数据传输协议。</p>
 <p>VLESS 命名源自“less is more”,与 VMESS 协议相同，VLESS 使用 UUID 进行身份验证，配置分入栈和出栈两部分，可用在客户端和服务端。.</p>
-<h4 id="fallback-参数">fallback 参数</h4>
-<p>引入了分流和回落的概念.</p>
-<p>VLESS 协议 中的 fallback 是可选的，只能用于 TLS 或 XTLS 模式下;</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
-  <span class="s2">&#34;alpn&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;dest&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;xver&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>dest: 必须的</li>
-<li>alpn: 可选,一般不用管（或者填[&ldquo;http/1.1&rdquo;]）</li>
-<li>path: 是回落路径</li>
-<li>xver 用来指示是否传递真实 ip 信息（需要填 1，不需要填 0）。</li>
-</ul>
-<p>如果有多组转发，则可按照 path 路径配置多组 fallback 对象:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;fallbacks&#34;</span><span class="o">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&#34;dest&#34;</span><span class="o">:</span> <span class="mi">80</span> <span class="c1">// 或者回落到其它也防探测的代理
-</span><span class="c1"></span>    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/websocket&#34;</span><span class="p">,</span> <span class="c1">// 必须换成自定义的 PATH
-</span><span class="c1"></span>        <span class="s2">&#34;dest&#34;</span><span class="o">:</span> <span class="mi">1234</span><span class="p">,</span>
-        <span class="s2">&#34;xver&#34;</span><span class="o">:</span> <span class="mi">1</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/vmesstcp&#34;</span><span class="p">,</span> <span class="c1">// 必须换成自定义的 PATH
-</span><span class="c1"></span>        <span class="s2">&#34;dest&#34;</span><span class="o">:</span> <span class="mi">2345</span><span class="p">,</span>
-        <span class="s2">&#34;xver&#34;</span><span class="o">:</span> <span class="mi">1</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&#34;path&#34;</span><span class="o">:</span> <span class="s2">&#34;/vmessws&#34;</span><span class="p">,</span> <span class="c1">// 必须换成自定义的 PATH
-</span><span class="c1"></span>        <span class="s2">&#34;dest&#34;</span><span class="o">:</span> <span class="mi">3456</span><span class="p">,</span>
-        <span class="s2">&#34;xver&#34;</span><span class="o">:</span> <span class="mi">1</span>
-    <span class="p">}</span>
-<span class="p">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>客户端:
-<ul>
-<li>请求 域名:/websocket 时，流量将转发到本机的 1234 端口；</li>
-<li>请求 域名:/vmesstcp 时，流量转发到本机的 2345 端口；</li>
-<li>请求路径为 /vmessws 时转发到 3456 端口；</li>
-<li>如果是其他请求，则转到到 80 端口。</li>
-</ul>
-</li>
-</ul>
 <h4 id="总结">总结</h4>
 <p>VLESS 协议本身不自带加密，用于翻墙时不能单独使用。由于 XTLS 的引入，目前 VLESS 协议有如下玩法：</p>
 <ul>
@@ -1120,6 +1037,19 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 <p>如 10.0.0.0/8。</p>
 <p>从外部文件中加载 IP 规则：
 如 ext:&lt;tag，必须以&gt; ext:（全部小写）开头，后面跟文件名（不含扩展名）file 和标签 tag，文件必须存放在 V2Ray 核心的资源目录中，文件格式与 geoip.dat 相同，且指定的 tag 必须在文件中存在。</p>
+<h3 id="路由域名规则">路由域名规则</h3>
+<h4 id="预定义域名列表">预定义域名列表</h4>
+<p>以 geosite: 开头，后面跟一个名称，例如 geosite:google 或 geosite:cn 名称 及 域名列表 请参考 预定义域名列表</p>
+<h4 id="子域名">子域名</h4>
+<p>由 &ldquo;domain:&rdquo; 开始，后面跟一个域名。当此域名是目标域名或其子域名时，该规则生效。例如 &ldquo;domain:v2ray.com&rdquo; 匹配 &ldquo;<a href="http://www.v2ray.com">www.v2ray.com</a>&rdquo;、&ldquo;v2ray.com&rdquo;，但不匹配 &ldquo;xv2ray.com&rdquo;。</p>
+<h4 id="完全匹配">完全匹配</h4>
+<p>由 &ldquo;full:&rdquo; 开始，后面跟一个域名。当此域名完整匹配目标域名时，该规则生效。例如 &ldquo;full:v2ray.com&rdquo; 匹配 &ldquo;v2ray.com&rdquo; 但不匹配 &ldquo;<a href="http://www.v2ray.com">www.v2ray.com</a>&rdquo;。</p>
+<h4 id="纯字符串">纯字符串</h4>
+<p>当此字符串匹配目标域名中任意部分，该规则生效。比如 &ldquo;sina.com&rdquo; 可以匹配 &ldquo;sina.com&rdquo;、&ldquo;sina.com.cn&rdquo; 和 &ldquo;<a href="http://www.sina.com">www.sina.com</a>&rdquo;，但不匹配 &ldquo;sina.cn&rdquo;。</p>
+<h4 id="正则表达式">正则表达式</h4>
+<p>由 &ldquo;regexp:&rdquo; 开始，余下部分是一个正则表达式。当此正则表达式匹配目标域名时，该规则生效。例如 &ldquo;regexp:\\.goo.*\\.com$&rdquo; 匹配 &ldquo;<a href="http://www.google.com">www.google.com</a>&rdquo;、&ldquo;fonts.googleapis.com&rdquo;，但不匹配 &ldquo;google.com&rdquo;。</p>
+<h4 id="从文件中加载域名">从文件中加载域名</h4>
+<p>形如 &ldquo;ext:&lt;tag&rdquo;，必须以&gt; ext:（小写）开头，后面跟 文件名 和 标签 ，文件存放在与 v2ray 核心相同的路径中，文件格式与 geosite.dat 相同，标签 必须在文件中声明。</p>
 <h2 id="reverse-nat-dnss">reverse/NAT-DNSS</h2>
 <h3 id="说明">说明</h3>
 <h4 id="环境">环境</h4>
@@ -1433,8 +1363,8 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-04-17
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/716ad7c006982dbf2e486b533d31b8f45d296292" title="update weekly">(716ad7c)</a>
+        2022-05-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4f5e635f2b2e8eb6000bd8ed0502323fdfbf009c" title="update weekly">(4f5e635)</a>
     </span>
   </p>
   
@@ -1451,7 +1381,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         <a class="next" href="/post/domain-instruction/">
-            <span class="next-text nav-default">Doman 域名</span>
+            <span class="next-text nav-default">Domain name 域名概念</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

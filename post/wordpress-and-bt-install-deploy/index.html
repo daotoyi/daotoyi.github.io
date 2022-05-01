@@ -43,13 +43,13 @@
 <meta property="og:description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
-<meta property="article:published_time" content="2022-03-15T22:26:00+08:00" />
-<meta property="article:modified_time" content="2022-04-17T17:10:03+08:00" />
+<meta property="article:published_time" content="2022-03-15T22:26:00+00:00" />
+<meta property="article:modified_time" content="2022-05-01T18:50:14+08:00" />
 <meta itemprop="name" content="WordPress 笔记">
 <meta itemprop="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建">
-<meta itemprop="datePublished" content="2022-03-15T22:26:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-04-17T17:10:03&#43;08:00" />
-<meta itemprop="wordCount" content="1449">
+<meta itemprop="datePublished" content="2022-03-15T22:26:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-05-01T18:50:14&#43;08:00" />
+<meta itemprop="wordCount" content="1459">
 
 
 
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/vps/"> VPS </a>
             </div>
-          <span class="more-meta"> 1449 words </span>
+          <span class="more-meta"> 1459 words </span>
           <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -257,6 +257,7 @@ docker <span class="nb">exec</span> -it wpdb bash
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1)使用官方的wordpress, 镜像is oud.io</span>
@@ -266,6 +267,7 @@ docker pull daocloud.io/daocloud/dao-wordpress:latest
 docker pull wordpress
 
 <span class="c1"># startup</span>
+<span class="c1"># docker run --name wpdb --env MYSQL_ROOT_PASSWORD=wordpress -d mariadb</span>
 docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 
 <span class="c1"># http://localhost:8080（或 http://host-ip:8080） 访问站点</span>
@@ -440,8 +442,8 @@ docker-compose -f docker-compose.wordpress.yml down <span class="c1">#停止并�
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-04-17
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/716ad7c006982dbf2e486b533d31b8f45d296292" title="update weekly">(716ad7c)</a>
+        2022-05-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4f5e635f2b2e8eb6000bd8ed0502323fdfbf009c" title="update weekly">(4f5e635)</a>
     </span>
   </p>
   

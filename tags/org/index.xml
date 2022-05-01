@@ -6,15 +6,24 @@
     <description>Recent content in org on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 23:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 Apr 2022 09:35:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Org ox-hugo</title>
+      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</link>
+      <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
+    </item>
+    
+    <item>
       <title>Org Table calculate</title>
       <link>https://daotoyi.github.io/post/emacs-org-table-calculate/</link>
-      <pubDate>Tue, 05 Apr 2022 23:10:00 +0800</pubDate>
+      <pubDate>Tue, 05 Apr 2022 23:10:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
       <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&amp;rsquo;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
